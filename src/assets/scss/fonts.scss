@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald Regular"), local("Oswald-Regular"),
+    url("./../fonts/Oswald-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald Medium"), local("Oswald-Medium"),
+    url("./../fonts/Oswald-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald Light"), local("Oswald-Light"),
+    url("./../fonts/Oswald-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Regular"), local("Raleway-Regular"),
+    url("./../fonts/Raleway-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Medium"), local("Raleway-Medium"),
+    url("./../fonts/Raleway-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Light"), local("Raleway-Light"),
+    url("./../fonts/Raleway-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}

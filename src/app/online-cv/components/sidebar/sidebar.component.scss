@@ -1,0 +1,12 @@
+:host {
+  grid-column: span 2;
+  order: 2;
+
+  .sidebar-box {
+    background: var(--theme-color);
+    color: rgb(255, 255, 255);
+    a {
+      color: rgb(255, 255, 255);
+    }
+  }
+}
