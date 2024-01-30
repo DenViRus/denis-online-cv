@@ -1,13 +1,21 @@
 {
   "root": true,
-  "ignorePatterns": ["projects/**/*"],
-  "plugins": ["unused-imports", "simple-import-sort", "import"],
+  "ignorePatterns": [
+    "projects/**/*"
+  ],
+  "plugins": [
+    "unused-imports",
+    "simple-import-sort",
+    "import"
+  ],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
   "overrides": [
     {
-      "files": ["*.ts"],
+      "files": [
+        "*.ts"
+      ],
       "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
@@ -33,7 +41,11 @@
         ],
         "@typescript-eslint/no-unused-vars": "error",
         "@typescript-eslint/no-explicit-any": "error",
-        "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"],
+        "no-restricted-syntax": [
+          "error",
+          "LabeledStatement",
+          "WithStatement"
+        ],
         "no-plusplus": "off",
         "no-console": "off",
         "no-alert": "off",
@@ -43,7 +55,10 @@
             "code": 200
           }
         ],
-        "semi": ["error", "always"],
+        "semi": [
+          "error",
+          "always"
+        ],
         "prefer-template": "error",
         "quotes": [
           "error",
@@ -59,14 +74,19 @@
         "import/no-duplicates": "error",
         "simple-import-sort/imports": "error",
         "simple-import-sort/exports": "error",
-        "@typescript-eslint/indent": ["error", 2],
+        "@typescript-eslint/indent": [
+          "error",
+          2
+        ],
         "@typescript-eslint/comma-dangle": "off",
         "@typescript-eslint/lines-between-class-members": "off",
         "@typescript-eslint/no-shadow": "error"
       }
     },
     {
-      "files": ["*.html"],
+      "files": [
+        "*.html"
+      ],
       "extends": [
         "plugin:@angular-eslint/template/recommended",
         "plugin:@angular-eslint/template/accessibility"
@@ -79,6 +99,14 @@
           }
         ]
       }
+    },
+    {
+      "files": [
+        "*.ts"
+      ],
+      "extends": [
+        "plugin:@ngrx/recommended"
+      ]
     }
   ]
 }
