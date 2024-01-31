@@ -10,5 +10,29 @@
     "link": "tel:+(381)629381067",
     "text": "+(381)629381067",
     "icon": "assets/icon/phone.svg"
+  },
+  {
+    "type": "telegram",
+    "link": "https://t.me/DenViRus83",
+    "text": "@DenViRus83",
+    "icon": "assets/icon/telegram.svg"
+  },
+  {
+    "type": "linkedin",
+    "link": "https://linkedin.com/in/DenViRus",
+    "text": "Denis Efremenko",
+    "icon": "assets/icon/linkedin.svg"
+  },
+  {
+    "type": "github",
+    "link": "http://github.com/DenViRus",
+    "text": "DenViRus",
+    "icon": "assets/icon/github.svg"
+  },
+  {
+    "type": "document",
+    "link": "https://drive.google.com/file/d/1RohxH8YycrwkCcaFpa7pnNHhkhubQDjr/view?usp=sharing",
+    "text": "Resume PDF",
+    "icon": "assets/icon/document.svg"
   }
 ]

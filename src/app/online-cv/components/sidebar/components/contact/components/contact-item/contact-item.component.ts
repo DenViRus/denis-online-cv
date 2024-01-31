@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
+import { IContactItem } from '../../models/contact-item.model';
 
 @Component({
   selector: 'app-contact-item',
@@ -8,5 +10,6 @@ import { Component } from '@angular/core';
   styleUrl: './contact-item.component.scss'
 })
 export class ContactItemComponent {
+  @Input() public itemData!: IContactItem;
 
 }

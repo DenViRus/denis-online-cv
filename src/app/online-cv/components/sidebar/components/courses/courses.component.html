@@ -1,0 +1,8 @@
+<div class="courses-container container-block">
+  <h2 class="container-block-title">{{coursesData.title}}</h2>
+  <ul class="courses-list container-block-list">
+    @for (item of coursesData.items; track $index) {
+    <app-courses-item [itemData]="item"></app-courses-item>
+    }
+  </ul>
+</div>

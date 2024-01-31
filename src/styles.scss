@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-@import './assets/scss/fonts.scss';
-@import './assets/scss/reset.scss';
-@import './assets/scss/vars.scss';
+@import "./assets/scss/fonts.scss";
+@import "./assets/scss/reset.scss";
+@import "./assets/scss/vars.scss";
 
-
-html, body {
+html,
+body {
   height: 100%;
   font-size: 62.5%;
   line-height: 1.15;
@@ -20,6 +20,57 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+// sidebar start
 .container-block {
-  padding: 3rem;
+  padding: 2rem;
+
+  .container-block-title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .container-block-list {
+    .container-block-item {
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+
+      .item-icon {
+        width: 1.8rem;
+        margin-right: 1.5rem;
+      }
+
+      .item-link {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .education-degree,
+      .courses-degree {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+      }
+
+      .education-meta,
+      .courses-meta {
+        color: var(--muted-white);
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+      
+      .education-time,
+      .courses-time {
+        color: var(--muted-white);
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+    }
+  }
 }
+// sidebar finish

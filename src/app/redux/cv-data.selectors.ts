@@ -10,3 +10,18 @@ export const selectProfileData = createSelector(
   selectOnlineCvState,
   (state: OnlineCvState) => state.profileData
 );
+
+export const selectContactData = createSelector(
+  selectOnlineCvState,
+  (state: OnlineCvState) => state.contactData
+);
+
+export const selectEducationData = createSelector(
+  selectOnlineCvState,
+  (state: OnlineCvState) => state.educationData
+);
+
+export const selectCoursesData = createSelector(
+  selectOnlineCvState,
+  (state: OnlineCvState) => state.coursesData
+);
