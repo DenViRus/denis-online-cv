@@ -1,3 +1,11 @@
 :host {
+  grid-column: span 7;
+  order: 1;
+
+  .main-box {
+    background: var(--white-color);
+    padding: 3rem;
+
+  }
 
 }

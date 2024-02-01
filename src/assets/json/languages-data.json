@@ -1,0 +1,13 @@
+{
+  "title": "Languages",
+  "items": [
+    {
+      "name": "Russian",
+      "desc": "(Native)"
+    },
+    {
+      "name": "English",
+      "desc": "(B1)"
+    }
+  ]
+}

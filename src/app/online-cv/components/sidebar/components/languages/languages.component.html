@@ -1,0 +1,8 @@
+<div class="languages-container container-block">
+  <h2 class="container-block-title">{{languagesData.title}}</h2>
+  <ul class="languages-list container-block-list">
+    @for (item of languagesData.items; track $index) {
+    <app-languages-item [itemData]="item"></app-languages-item>
+    }
+  </ul>
+</div>

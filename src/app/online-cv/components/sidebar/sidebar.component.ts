@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 
-import { ContactComponent } from './components/contact/contact.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
 import { CoursesComponent } from './components/courses/courses.component';
 import { EducationComponent } from './components/education/education.component';
+import { InterestsComponent } from './components/interests/interests.component';
+import { LanguagesComponent } from './components/languages/languages.component';
 import { ProfileComponent } from './components/profile/profile.component';
 
 @Component({
@@ -10,9 +12,11 @@ import { ProfileComponent } from './components/profile/profile.component';
   standalone: true,
   imports: [
     ProfileComponent,
-    ContactComponent,
+    ContactsComponent,
     EducationComponent,
-    CoursesComponent
+    CoursesComponent,
+    LanguagesComponent,
+    InterestsComponent
   ],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss'

@@ -1,4 +1,4 @@
-export interface IContactItem {
+export interface IContactsItem {
   type: string;
   link: string;
   text: string;

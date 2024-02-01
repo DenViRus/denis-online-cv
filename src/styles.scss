@@ -22,7 +22,18 @@ body {
 
 // sidebar start
 .container-block {
+  font-family: var(--font-secondary);
   padding: 2rem;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 1px;
+    background: var(--muted-white);
+  }
 
   .container-block-title {
     text-transform: uppercase;
@@ -38,8 +49,15 @@ body {
       font-size: 1.8rem;
 
       .item-icon {
-        width: 1.8rem;
-        margin-right: 1.5rem;
+        &--contacts {
+          width: 1.8rem;
+          margin-right: 1rem;
+        }
+
+        &--interests {
+          width: 2rem;
+          margin-right: 1rem;
+        }
       }
 
       .item-link {
@@ -62,7 +80,7 @@ body {
         margin-bottom: 0;
         margin-top: 0;
       }
-      
+
       .education-time,
       .courses-time {
         color: var(--muted-white);
@@ -70,7 +88,35 @@ body {
         font-weight: 500;
         margin-bottom: 0;
       }
+
+      .languages-desc {
+        color: var(--muted-white);
+      }
     }
   }
 }
 // sidebar finish
+
+// main start
+
+.section-block {
+  .section-title-box {
+    .section-block-icon {
+      &--summary {
+      }
+    }
+
+    .section-block-title {
+    }
+  }
+
+  .section-block-list {
+    .section-block-item {
+      .item-text {
+        
+      }
+    }
+  }
+}
+
+// main finish

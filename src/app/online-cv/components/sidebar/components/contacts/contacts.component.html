@@ -1,0 +1,8 @@
+<div class="contacts-container container-block">
+  <h2 class="container-block-title">{{contactsData.title}}</h2>
+  <ul class="contacts-list container-block-list">
+    @for (item of contactsData.items; track $index) {
+    <app-contacts-item [itemData]="item"></app-contacts-item>
+    }
+  </ul>
+</div>

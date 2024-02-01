@@ -1,0 +1,11 @@
+<section class="summary-section section-block">
+  <div class="section-title-box">
+    <div class="section-block-icon section-block-icon--{{summaryData.type}}"></div>
+    <h2 class="section-block-title">{{summaryData.title}}</h2>
+  </div>
+  <ul class="summary-list section-block-list">
+    @for (item of summaryData.items; track $index) {
+    <app-summary-item [itemData]="item"></app-summary-item>
+    }
+  </ul>
+</section>

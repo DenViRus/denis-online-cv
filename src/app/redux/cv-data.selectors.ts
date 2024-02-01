@@ -11,9 +11,9 @@ export const selectProfileData = createSelector(
   (state: OnlineCvState) => state.profileData
 );
 
-export const selectContactData = createSelector(
+export const selectContactsData = createSelector(
   selectOnlineCvState,
-  (state: OnlineCvState) => state.contactData
+  (state: OnlineCvState) => state.contactsData
 );
 
 export const selectEducationData = createSelector(
@@ -24,4 +24,19 @@ export const selectEducationData = createSelector(
 export const selectCoursesData = createSelector(
   selectOnlineCvState,
   (state: OnlineCvState) => state.coursesData
+);
+
+export const selectLanguagesData = createSelector(
+  selectOnlineCvState,
+  (state: OnlineCvState) => state.languagesData
+);
+
+export const selectInterestsData = createSelector(
+  selectOnlineCvState,
+  (state: OnlineCvState) => state.InterestsData
+);
+
+export const selectSummaryData = createSelector(
+  selectOnlineCvState,
+  (state: OnlineCvState) => state.SummaryData
 );
