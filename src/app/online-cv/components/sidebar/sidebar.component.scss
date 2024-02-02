@@ -1,12 +1,4 @@
 :host {
   grid-column: span 3;
   order: 2;
-
-  .sidebar-box {
-    background: var(--theme-color);
-    color: var(--white-color);
-    a {
-      color: var(--white-color);
-    }
-  }
 }

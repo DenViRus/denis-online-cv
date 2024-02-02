@@ -3,6 +3,7 @@ import { createReducer } from '@ngrx/store';
 import contactsData from '../../assets/json/contacts-data.json';
 import coursesData  from '../../assets/json/courses-data.json';
 import educationData from '../../assets/json/education-data.json';
+import experienceData from '../../assets/json/experience-data.json';
 import interestsData from '../../assets/json/interests-data.json';
 import languagesData from '../../assets/json/languages-data.json';
 import profileData from '../../assets/json/profile-data.json';
@@ -21,8 +22,9 @@ export const initialState: IOnlineCv = {
   educationData: educationData,
   coursesData: coursesData,
   languagesData: languagesData,
-  InterestsData: interestsData,
-  SummaryData: summaryData
+  interestsData: interestsData,
+  summaryData: summaryData,
+  experienceData: experienceData
 };
 
 export const OnlineCvReducer = createReducer(

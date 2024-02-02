@@ -7,7 +7,7 @@ html,
 body {
   height: 100%;
   font-size: 62.5%;
-  line-height: 1.15;
+  line-height: 1.2;
   -webkit-text-size-adjust: 100%;
 }
 body {
@@ -20,103 +20,197 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-// sidebar start
-.container-block {
-  font-family: var(--font-secondary);
-  padding: 2rem;
+.online-cv-box {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  background: var(--theme-color);
+  max-width: 100rem;
+  margin: 0 auto;
   position: relative;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 50%;
-    height: 1px;
-    background: var(--muted-white);
-  }
+  .project-box {
+    // main start
+    &--main {
+      background: var(--white-color);
 
-  .container-block-title {
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-  }
+      .section-block {
+        line-height: 1.4;
+        padding: 3rem;
+        position: relative;
+        .section-title-box {
+          display: flex;
+          align-items: center;
+          margin-bottom: 2.5rem;
+          .section-block-icon {
+            width: 4rem;
+            height: 4rem;
+            background-color: var(--section-title-color);
+            background-repeat: no-repeat;
+            background-size: 60%;
+            background-position: center;
 
-  .container-block-list {
-    .container-block-item {
-      margin-bottom: 1.5rem;
-      font-size: 1.8rem;
+            border-radius: 50%;
+            margin-right: 1rem;
+            &--summary {
+              background-image: url("./assets/icon/summary.svg");
+            }
+            &--experience {
+              background-image: url("./assets/icon/experience.svg");
+            }
+          }
 
-      .item-icon {
-        &--contacts {
-          width: 1.8rem;
-          margin-right: 1rem;
+          .section-block-title {
+            font-size: var(--section-title-FZ);
+            text-transform: uppercase;
+            font-weight: 500;
+            color: var(--section-title-color);
+          }
         }
 
-        &--interests {
-          width: 2rem;
-          margin-right: 1rem;
+        .section-block-paragraph {
+          text-indent: 2rem;
+        }
+
+        .section-block-list {
+          margin-bottom: 2rem;
+          .section-block-item {
+            font-size: var(--section-item-FZ);
+            margin-bottom: 2rem;
+
+            .section-item-meta {
+              .meta-title-box {
+                position: relative;
+                overflow: hidden;
+                margin-bottom: 0.5rem;
+                display: flex;
+
+                .meta-title {
+                  color: var(--text-color);
+                  font-size: 2rem;
+                  font-weight: 500;
+                  flex: 70%;
+                }
+
+                .meta-time {
+                  position: absolute;
+                  right: 0;
+                  top: 0;
+                  color: var(--text-grey);
+                  flex: 30%;
+                }
+              }
+
+              .meta-company {
+                margin-bottom: 1rem;
+                color: var(--text-grey);
+              }
+            }
+
+            .section-item-details {
+              .detail-box {
+                .detail-title {
+                  text-transform: capitalize;
+                }
+
+                .detail-list {
+                  padding: 1rem 0 2rem 3rem;
+                  font-size: 1.6rem;
+
+                  .detail-item {
+                    list-style: disc;
+                  }
+                }
+              }
+            }
+          }
         }
       }
+    }
+    // main finish
 
-      .item-link {
-        &:hover {
-          text-decoration: underline;
+    // sidebar start
+    &--sidebar {
+      background: var(--theme-color);
+      color: var(--white-color);
+      a {
+        color: var(--white-color);
+      }
+      .container-block {
+        font-family: var(--font-secondary);
+        padding: 2rem;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          width: 50%;
+          height: 1px;
+          background: var(--muted-white);
+        }
+
+        .container-block-title {
+          text-transform: uppercase;
+          font-size: 2rem;
+          font-weight: 700;
+          margin-top: 0;
+          margin-bottom: 1.5rem;
+        }
+
+        .container-block-list {
+          .container-block-item {
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+
+            .item-icon {
+              &--contacts {
+                width: 1.8rem;
+                margin-right: 1rem;
+              }
+
+              &--interests {
+                width: 2rem;
+                margin-right: 1rem;
+              }
+            }
+
+            .item-link {
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+
+            .education-degree,
+            .courses-degree {
+              margin-top: 0;
+              margin-bottom: 0.5rem;
+            }
+
+            .education-meta,
+            .courses-meta {
+              color: var(--muted-white);
+              font-size: 1.6rem;
+              font-weight: 500;
+              margin-bottom: 0;
+              margin-top: 0;
+            }
+
+            .education-time,
+            .courses-time {
+              color: var(--muted-white);
+              font-size: 1.6rem;
+              font-weight: 500;
+              margin-bottom: 0;
+            }
+
+            .languages-desc {
+              color: var(--muted-white);
+            }
+          }
         }
       }
-
-      .education-degree,
-      .courses-degree {
-        margin-top: 0;
-        margin-bottom: 0.5rem;
-      }
-
-      .education-meta,
-      .courses-meta {
-        color: var(--muted-white);
-        font-size: 1.6rem;
-        font-weight: 500;
-        margin-bottom: 0;
-        margin-top: 0;
-      }
-
-      .education-time,
-      .courses-time {
-        color: var(--muted-white);
-        font-size: 1.6rem;
-        font-weight: 500;
-        margin-bottom: 0;
-      }
-
-      .languages-desc {
-        color: var(--muted-white);
-      }
+      // sidebar finish
     }
   }
 }
-// sidebar finish
-
-// main start
-
-.section-block {
-  .section-title-box {
-    .section-block-icon {
-      &--summary {
-      }
-    }
-
-    .section-block-title {
-    }
-  }
-
-  .section-block-list {
-    .section-block-item {
-      .item-text {
-        
-      }
-    }
-  }
-}
-
-// main finish

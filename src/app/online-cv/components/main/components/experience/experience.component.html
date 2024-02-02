@@ -1,0 +1,16 @@
+<section
+  class="section-block section-block--{{ experienceData.type }}"
+  id="sectionBlock{{ experienceData.type.toUpperCase() }}"
+>
+  <div class="section-title-box">
+    <div
+      class="section-block-icon section-block-icon--{{ experienceData.type }}"
+    ></div>
+    <h2 class="section-block-title">{{ experienceData.title }}</h2>
+  </div>
+  <ul class="section-block-list">
+    @for (item of experienceData.items; track $index) {
+    <app-experience-item [itemData]="item"></app-experience-item>
+    }
+  </ul>
+</section>

@@ -33,10 +33,15 @@ export const selectLanguagesData = createSelector(
 
 export const selectInterestsData = createSelector(
   selectOnlineCvState,
-  (state: OnlineCvState) => state.InterestsData
+  (state: OnlineCvState) => state.interestsData
 );
 
 export const selectSummaryData = createSelector(
   selectOnlineCvState,
-  (state: OnlineCvState) => state.SummaryData
+  (state: OnlineCvState) => state.summaryData
+);
+
+export const selectExperienceData = createSelector(
+  selectOnlineCvState,
+  (state: OnlineCvState) => state.experienceData
 );

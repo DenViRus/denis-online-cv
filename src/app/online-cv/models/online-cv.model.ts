@@ -1,3 +1,4 @@
+import { IExperience } from '../components/main/components/experience/models/experience.model';
 import { ISummary } from '../components/main/components/summary/models/summary.model';
 import { IContacts } from '../components/sidebar/components/contacts/models/contacts.model';
 import { ICourses } from '../components/sidebar/components/courses/models/courses.model';
@@ -13,6 +14,7 @@ export interface IOnlineCv {
   educationData: IEducation,
   coursesData: ICourses,
   languagesData: ILanguages,
-  InterestsData: IInterests,
-  SummaryData: ISummary
+  interestsData: IInterests,
+  summaryData: ISummary,
+  experienceData: IExperience
 }

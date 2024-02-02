@@ -1,0 +1,28 @@
+<li class="section-block-item">
+  <div class="section-item-meta">
+    <div class="meta-title-box">
+      <h3 class="meta-title">{{ itemData.title }}</h3>
+      <div class="meta-time">{{ itemData.time }}</div>
+    </div>
+    <div class="meta-company">{{ itemData.company }}</div>
+  </div>
+
+  <div class="section-item-details">
+    <div class="detail-box detail-box--{{ itemData.responsibilities.title }}">
+      <h5 class="detail-title">{{ itemData.responsibilities.title }}</h5>
+      <ul class="detail-list">
+        @for (responsibility of itemData.responsibilities.items; track $index) {
+        <li class="detail-item">{{ responsibility }}</li>
+        }
+      </ul>
+    </div>
+    <div class="detail-box detail-box--{{ itemData.achievements.title }}">
+      <h5 class="detail-title">{{ itemData.achievements.title }}</h5>
+      <ul class="detail-list">
+        @for (achievement of itemData.achievements.items; track $index) {
+        <li class="detail-item">{{ achievement }}</li>
+        }
+      </ul>
+    </div>
+  </div>
+</li>

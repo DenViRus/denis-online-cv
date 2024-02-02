@@ -1,0 +1,72 @@
+{
+  "title": "Professional Experience",
+  "icon": "assets/icon/experience.svg",
+  "type": "experience",
+  "items": [
+    {
+      "title": "Logistics Manager",
+      "time": "01.08.2016 - 17.08.2020",
+      "company": "Transportation Company. Exclusive contractor for Transneft in the transportation of oversized and heavy cargo.",
+      "responsibilities": {
+        "title": "responsibilities:",
+        "items": [
+          "Managing projects for the transportation of oversized cargo",
+          "Identifying customer needs and resource planning for client projects",
+          "Conducting negotiations",
+          "Handling the necessary regulatory documentation",
+          "Monitoring customer order execution at all stages"
+        ]
+      },
+      "achievements": {
+        "title": "achievements:",
+        "items": [
+          "Developed and implemented an algorithm for calculating resources and costs for customer order execution"
+        ]
+      }
+    },
+    {
+      "title": "Corporate Client Acquisition Manager",
+      "time": "01.11.2011 - 03.06.2016",
+      "company": "Industrial and Construction Equipment. The largest supplier of construction and industrial equipment in the Volga Region.",
+      "responsibilities": {
+        "title": "responsibilities:",
+        "items": [
+          "Building a database of potential clients",
+          "Active sales of construction and industrial equipment",
+          "Negotiating with clients and suppliers",
+          "Identifying client project needs and resource planning",
+          "Ensuring uninterrupted equipment and material deliveries for client tasks"
+        ]
+      },
+      "achievements": {
+        "title": "achievements:",
+        "items": [
+          "Achieved an average monthly sales volume of 10 million rubles",
+          "Attracted over 50 new clients, including more than 10 at the federal level",
+          "Maintained new client relationships for an average of over two years",
+          "Participated in major federal projects"
+        ]
+      }
+    },
+    {
+      "title": "Client Relations Manager",
+      "time": "02.04.2007 - 25.08.2011",
+      "company": "Building and Finishing Materials. Manufacturer of finishing materials.",
+      "responsibilities": {
+        "title": "responsibilities:",
+        "items": [
+          "Active sales",
+          "Conducting negotiations at the top management level",
+          "NPlanning and developing new projects"
+        ]
+      },
+      "achievements": {
+        "title": "achievements:",
+        "items": [
+          "Achieved a personal monthly sales volume exceeding 5 million rubles",
+          "Established two new company branches in different regions of the country"
+        ]
+      }
+    }
+  ]
+}
