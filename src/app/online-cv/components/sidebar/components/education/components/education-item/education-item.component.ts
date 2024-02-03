@@ -7,7 +7,7 @@ import { IEducationItem } from '../../models/education-item.model';
   standalone: true,
   imports: [],
   templateUrl: './education-item.component.html',
-  styleUrl: './education-item.component.scss'
+  styleUrl: './education-item.component.scss',
 })
 export class EducationItemComponent {
   @Input() public itemData!: IEducationItem;

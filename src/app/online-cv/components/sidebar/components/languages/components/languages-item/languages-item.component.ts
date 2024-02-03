@@ -7,9 +7,8 @@ import { ILanguagesItem } from '../../models/languages-item.model';
   standalone: true,
   imports: [],
   templateUrl: './languages-item.component.html',
-  styleUrl: './languages-item.component.scss'
+  styleUrl: './languages-item.component.scss',
 })
 export class LanguagesItemComponent {
   @Input() public itemData!: ILanguagesItem;
-
 }

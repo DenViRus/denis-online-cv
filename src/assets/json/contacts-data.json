@@ -1,5 +1,6 @@
 {
   "title": "Contacts",
+  "type": "contacts",
   "items": [
     {
       "type": "email",

@@ -11,9 +11,9 @@ import { ILanguages } from './models/languages.model';
   standalone: true,
   imports: [LanguagesItemComponent],
   templateUrl: './languages.component.html',
-  styleUrl: './languages.component.scss'
+  styleUrl: './languages.component.scss',
 })
-export class LanguagesComponent implements OnInit, OnDestroy{
+export class LanguagesComponent implements OnInit, OnDestroy {
   public languagesData!: ILanguages;
   private languagesDataSubscription!: Subscription;
 
@@ -29,5 +29,4 @@ export class LanguagesComponent implements OnInit, OnDestroy{
   ngOnDestroy() {
     this.languagesDataSubscription.unsubscribe();
   }
-
 }

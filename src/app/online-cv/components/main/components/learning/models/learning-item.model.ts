@@ -1,4 +1,4 @@
-export interface ICoursesItem {
+export interface ILearningItem {
   degree: string;
   meta: string;
   time: string;

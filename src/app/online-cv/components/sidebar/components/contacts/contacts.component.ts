@@ -11,9 +11,9 @@ import { IContacts } from './models/contacts.model';
   standalone: true,
   imports: [ContactsItemComponent],
   templateUrl: './contacts.component.html',
-  styleUrl: './contacts.component.scss'
+  styleUrl: './contacts.component.scss',
 })
-export class ContactsComponent implements OnInit, OnDestroy{
+export class ContactsComponent implements OnInit, OnDestroy {
   public contactsData!: IContacts;
   private contactsDataSubscription!: Subscription;
 
@@ -29,5 +29,4 @@ export class ContactsComponent implements OnInit, OnDestroy{
   ngOnDestroy() {
     this.contactsDataSubscription.unsubscribe();
   }
-
 }

@@ -11,9 +11,9 @@ import { IEducation } from './models/education.model';
   standalone: true,
   imports: [EducationItemComponent],
   templateUrl: './education.component.html',
-  styleUrl: './education.component.scss'
+  styleUrl: './education.component.scss',
 })
-export class EducationComponent implements OnInit, OnDestroy{
+export class EducationComponent implements OnInit, OnDestroy {
   public educationData!: IEducation;
   private educationDataSubscription!: Subscription;
 
@@ -29,5 +29,4 @@ export class EducationComponent implements OnInit, OnDestroy{
   ngOnDestroy() {
     this.educationDataSubscription.unsubscribe();
   }
-
 }

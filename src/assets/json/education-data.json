@@ -1,10 +1,12 @@
 {
   "title": "Education",
+  "type": "education",
   "items": [
     {
       "degree": "Marketing Specialist",
       "meta": "Samara State Economic University (SSEU), Samara, Russia",
-      "time": "01.09.2001 - 21.06.2006"
+      "time": "01.09.2001 - 21.06.2006",
+      "link": "http://www.ssau.ru"
     }
   ]
 }

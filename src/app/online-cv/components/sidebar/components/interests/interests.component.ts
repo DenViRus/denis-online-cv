@@ -11,9 +11,9 @@ import { IInterests } from './models/interests.model';
   standalone: true,
   imports: [InterestsItemComponent],
   templateUrl: './interests.component.html',
-  styleUrl: './interests.component.scss'
+  styleUrl: './interests.component.scss',
 })
-export class InterestsComponent implements OnInit, OnDestroy{
+export class InterestsComponent implements OnInit, OnDestroy {
   public interestsData!: IInterests;
   private interestsDataSubscription!: Subscription;
 
@@ -29,5 +29,4 @@ export class InterestsComponent implements OnInit, OnDestroy{
   ngOnDestroy() {
     this.interestsDataSubscription.unsubscribe();
   }
-
 }

@@ -7,7 +7,7 @@ import { IContactsItem } from '../../models/contacts-item.model';
   standalone: true,
   imports: [],
   templateUrl: './contacts-item.component.html',
-  styleUrl: './contacts-item.component.scss'
+  styleUrl: './contacts-item.component.scss',
 })
 export class ContactsItemComponent {
   @Input() public itemData!: IContactsItem;

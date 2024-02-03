@@ -7,9 +7,8 @@ import { ICoursesItem } from '../../models/courses-item.model';
   standalone: true,
   imports: [],
   templateUrl: './courses-item.component.html',
-  styleUrl: './courses-item.component.scss'
+  styleUrl: './courses-item.component.scss',
 })
 export class CoursesItemComponent {
   @Input() public itemData!: ICoursesItem;
-
 }

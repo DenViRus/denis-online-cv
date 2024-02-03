@@ -11,9 +11,9 @@ import { ICourses } from './models/courses.model';
   standalone: true,
   imports: [CoursesItemComponent],
   templateUrl: './courses.component.html',
-  styleUrl: './courses.component.scss'
+  styleUrl: './courses.component.scss',
 })
-export class CoursesComponent implements OnInit, OnDestroy{
+export class CoursesComponent implements OnInit, OnDestroy {
   public coursesData!: ICourses;
   private coursesDataSubscription!: Subscription;
 
@@ -29,5 +29,4 @@ export class CoursesComponent implements OnInit, OnDestroy{
   ngOnDestroy() {
     this.coursesDataSubscription.unsubscribe();
   }
-
 }
