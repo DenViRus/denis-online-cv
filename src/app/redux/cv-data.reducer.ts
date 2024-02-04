@@ -8,6 +8,7 @@ import interestsData from '../../assets/json/interests-data.json';
 import languagesData from '../../assets/json/languages-data.json';
 import profileData from '../../assets/json/profile-data.json';
 import projectsData from '../../assets/json/projects-data.json';
+import skillsData from '../../assets/json/skills-data.json';
 import summaryData from '../../assets/json/summary-data.json';
 import { IOnlineCv } from '../online-cv/models/online-cv.model';
 
@@ -25,6 +26,7 @@ export const initialState: IOnlineCv = {
   summaryData: summaryData,
   experienceData: experienceData,
   projectsData: projectsData,
+  skillsData: skillsData
 };
 
 export const OnlineCvReducer = createReducer(initialState);

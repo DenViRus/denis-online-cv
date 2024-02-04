@@ -1,0 +1,13 @@
+<section class="section-block section-block--{{ skillsData.type }}">
+  <div class="section-title-box">
+    <div
+      class="section-block-icon section-block-icon--{{ skillsData.type }}"
+    ></div>
+    <h2 class="section-block-title">{{ skillsData.title }}</h2>
+  </div>
+  <ul class="section-block-list">
+    @for (item of skillsData.items; track $index) {
+    <app-skills-item [itemData]="item"></app-skills-item>
+    }
+  </ul>
+</section>

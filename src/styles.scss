@@ -33,19 +33,19 @@ body {
     // main start
     &--main {
       background: var(--white-color);
-
+      padding: 3rem;
       a {
         color: var(--section-title-color);
       }
 
       .section-block {
         line-height: 1.4;
-        padding: 3rem;
         position: relative;
+        margin-bottom: 3rem;
         .section-title-box {
           display: flex;
           align-items: center;
-          margin-bottom: 2.5rem;
+          margin-bottom: 1.5rem;
           .section-block-icon {
             width: 4rem;
             height: 4rem;
@@ -68,6 +68,9 @@ body {
             &--projects {
               background-image: url("./assets/icon/projects.svg");
             }
+            &--skills {
+              background-image: url("./assets/icon/skills.svg");
+            }
           }
 
           .section-block-title {
@@ -83,10 +86,8 @@ body {
         }
 
         .section-block-list {
-          margin-bottom: 2rem;
           .section-block-item {
             font-size: var(--section-item-FZ);
-            margin-bottom: 2rem;
 
             .section-item-meta {
               .meta-box {
@@ -133,9 +134,25 @@ body {
                 }
 
                 .meta-image {
-                  width: 2.5rem;
-                  height: 2.5rem;
+                  width: 2rem;
+                  height: 2rem;
                   margin: 0 1rem 0 2rem;
+                }
+
+                .level-title {
+                  font-weight: 500;
+                }
+
+                .level-bar {
+                  width: 70%;
+                  height: var(--section-item-FZ);
+                  background: var(--smoky-white);
+                  margin-left: auto;
+
+                  .level-bar-inner {
+                    height: var(--section-item-FZ);
+                    background: var(--theme-color);
+                  }
                 }
               }
 
@@ -152,13 +169,16 @@ body {
                 }
 
                 .detail-list {
-                  padding: 1rem 0 2rem 3rem;
+                  margin: 0 0 2rem 3rem;
                   font-size: 1.6rem;
 
                   .detail-item {
                     list-style: disc;
+                    margin-bottom: 0.5rem;
 
                     .detail-item-box {
+                      font-family: var(--font-secondary);
+                      font-weight: 500;
                       position: relative;
                       overflow: hidden;
                       display: flex;
@@ -169,13 +189,12 @@ body {
 
                         .detail-item-heading {
                           color: var(--section-title-color);
-                          font-family: var(--font-secondary);
                           font-size: 2rem;
-                          font-weight: 500;
                         }
 
                         .detail-item-desc {
                           color: var(--text-grey);
+                          font-size: 1.8rem;
                         }
                       }
 

@@ -1,0 +1,27 @@
+{
+  "title": "Skills & Proficiency",
+  "type": "skills",
+  "icon": "assets/icon/skills.svg",
+  "items": [
+    {
+      "type": "layout",
+      "title": "HTML5 & CSS3",
+      "level": 70
+    },
+    {
+      "type": "javascript",
+      "title": "JavaScript",
+      "level": 70
+    },
+    {
+      "type": "typescript",
+      "title": "TypeScript",
+      "level": 50
+    },
+    {
+      "type": "angular",
+      "title": "Angular",
+      "level": 50
+    }
+  ]
+}

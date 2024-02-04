@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { LearningComponent } from './components/learning/learning.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { SkillsComponent } from './components/skills/skills.component';
 import { SummaryComponent } from './components/summary/summary.component';
 
 @Component({
@@ -12,7 +13,8 @@ import { SummaryComponent } from './components/summary/summary.component';
     SummaryComponent,
     ExperienceComponent,
     LearningComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    SkillsComponent,
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
