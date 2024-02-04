@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 import { ExperienceComponent } from './components/experience/experience.component';
 import { LearningComponent } from './components/learning/learning.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 import { SummaryComponent } from './components/summary/summary.component';
 
 @Component({
@@ -10,7 +11,8 @@ import { SummaryComponent } from './components/summary/summary.component';
   imports: [
     SummaryComponent,
     ExperienceComponent,
-    LearningComponent
+    LearningComponent,
+    ProjectsComponent
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',

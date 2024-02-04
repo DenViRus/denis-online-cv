@@ -1,0 +1,48 @@
+{
+  "title": "Projects",
+  "type": "projects",
+  "icon": "assets/icon/projects.svg",
+  "items": [
+    {
+      "title": "Web Layout",
+      "type": "layout",
+      "icon": "assets/icon/layout.svg",
+      "items": [
+        {
+          "title": "Shelter",
+          "desc": "A responsive layout for a pet adoption site.",
+          "link": "https://denvirus.github.io/Shelter/src/pages/main/main.html"
+        }
+      ]
+    },
+    {
+      "title": "JavaScript",
+      "type": "javascript",
+      "icon": "assets/icon/javascript.svg",
+      "items": [
+        {
+          "title": "Bookshop",
+          "desc": "A simple bookshop app (html, css, js).",
+          "link": "Example of an online book store (html, css, js)"
+        },
+        {
+          "title": "English for kids",
+          "desc": "A simple app for learning English words (html, css, js).",
+          "link": "https://denvirus.github.io/task-english-for-kids/src/index.html"
+        }
+      ]
+    },
+    {
+      "title": "Angular",
+      "type": "angular",
+      "icon": "assets/icon/angular.svg",
+      "items": [
+        {
+          "title": "Furniture Store",
+          "desc": "A simple online furniture store (Angular).",
+          "link": "https://denvirus.github.io/furniture-store-app/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+<section class="section-block section-block--{{ projectsData.type }}">
+  <div class="section-title-box">
+    <div
+      class="section-block-icon section-block-icon--{{ projectsData.type }}"
+    ></div>
+    <h2 class="section-block-title">{{ projectsData.title }}</h2>
+  </div>
+  <ul class="section-block-list">
+    @for (item of projectsData.items; track $index) {
+    <app-projects-item [itemData]="item"></app-projects-item>
+    }
+  </ul>
+</section>

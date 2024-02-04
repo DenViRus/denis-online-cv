@@ -1,0 +1,36 @@
+<li class="section-block-item section-block-item--{{ itemData.type }}">
+  <div class="section-item-meta">
+    <div class="meta-box">
+      <img
+        class="meta-image"
+        src="{{ itemData.icon }}"
+        alt="icon {{ itemData.type }}"
+      />
+      <h3 class="meta-title">{{ itemData.title }}</h3>
+    </div>
+    <div class="section-item-details">
+      <div class="detail-box">
+        <ul class="detail-list">
+          @for (item of itemData.items; track $index) {
+          <li class="detail-item">
+            <div class="detail-item-box">
+              <div class="detail-item-heading-box">
+                <h5 class="detail-item-heading">{{ item.title }}</h5>
+                <div class="detail-item-desc">{{ item.desc }}</div>
+              </div>
+              <div class="detail-item-link-box">
+                <a
+                  class="detail-item-link"
+                  href="{{ item.link }}"
+                  target="_blank"
+                  >demo</a
+                >
+              </div>
+            </div>
+          </li>
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</li>

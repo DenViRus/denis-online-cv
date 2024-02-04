@@ -45,3 +45,8 @@ export const selectExperienceData = createSelector(
   selectOnlineCvState,
   (state: OnlineCvState) => state.experienceData
 );
+
+export const selectProjectsData = createSelector(
+  selectOnlineCvState,
+  (state: OnlineCvState) => state.projectsData
+);
