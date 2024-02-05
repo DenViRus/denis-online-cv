@@ -1,0 +1,77 @@
+:host {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+
+  .lang-toggler {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 7.5rem;
+    height: 2.5rem;
+    background-color: var(--theme-color);
+    border-radius: 2.5rem;
+
+    .toggler-inner {
+      position: absolute;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background-color: var(--white-color);
+      cursor: pointer;
+      z-index: 1;
+      transition: left 0.3s ease-in-out;
+
+      &--en {
+        left: calc(100% - 2.5rem);
+      }
+
+      &--ru {
+        left: 0;
+      }
+    }
+
+    .toggler-text {
+      position: absolute;
+      left: 0.5rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--text-color);
+      transition: left 0.3s ease-in-out;
+
+      &--en {
+        left: 0.5rem;
+        animation: fadeIn 0.3s ease-in-out;
+      }
+
+      &--ru {
+        left: calc(100% - 3rem);
+        animation: fadeOut 0.3s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 1;
+        }
+        10% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes fadeOut {
+        0% {
+          opacity: 1;
+        }
+        10% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

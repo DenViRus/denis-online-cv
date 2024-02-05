@@ -1,57 +1,62 @@
 import { createFeatureSelector, createSelector } from '@ngrx/store';
 
-import { onlineCvDataFeatureKey, OnlineCvState } from './cv-data.reducer';
+import { OnlineCvState, onlineCvStateFeatureKey } from './cv-data.reducer';
 
 export const selectOnlineCvState = createFeatureSelector<OnlineCvState>(
-  onlineCvDataFeatureKey
+  onlineCvStateFeatureKey
+);
+
+export const selectLangTogglerData = createSelector(
+  selectOnlineCvState,
+  (state: OnlineCvState) => state.langTogglerData
 );
 
 export const selectProfileData = createSelector(
   selectOnlineCvState,
-  (state: OnlineCvState) => state.profileData
+  (state: OnlineCvState) => state.onlineCvData.profileData
 );
 
 export const selectContactsData = createSelector(
   selectOnlineCvState,
-  (state: OnlineCvState) => state.contactsData
+  (state: OnlineCvState) => state.onlineCvData.contactsData
 );
 
 export const selectEducationData = createSelector(
   selectOnlineCvState,
-  (state: OnlineCvState) => state.educationData
+  (state: OnlineCvState) => state.onlineCvData.educationData
 );
 
 export const selectCoursesData = createSelector(
   selectOnlineCvState,
-  (state: OnlineCvState) => state.coursesData
+  (state: OnlineCvState) => state.onlineCvData.coursesData
 );
 
 export const selectLanguagesData = createSelector(
   selectOnlineCvState,
-  (state: OnlineCvState) => state.languagesData
+  (state: OnlineCvState) => state.onlineCvData.languagesData
 );
 
 export const selectInterestsData = createSelector(
   selectOnlineCvState,
-  (state: OnlineCvState) => state.interestsData
+  (state: OnlineCvState) => state.onlineCvData.interestsData
 );
 
 export const selectSummaryData = createSelector(
   selectOnlineCvState,
-  (state: OnlineCvState) => state.summaryData
+  (state: OnlineCvState) => state.onlineCvData.summaryData
 );
 
 export const selectExperienceData = createSelector(
   selectOnlineCvState,
-  (state: OnlineCvState) => state.experienceData
+  (state: OnlineCvState) => state.onlineCvData.experienceData
 );
 
 export const selectProjectsData = createSelector(
   selectOnlineCvState,
-  (state: OnlineCvState) => state.projectsData
+  (state: OnlineCvState) => state.onlineCvData.projectsData
 );
 
 export const selectSkillsData = createSelector(
   selectOnlineCvState,
-  (state: OnlineCvState) => state.skillsData
+  (state: OnlineCvState) => state.onlineCvData.skillsData
 );

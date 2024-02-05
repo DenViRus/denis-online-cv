@@ -1,8 +1,14 @@
-import { createActionGroup, emptyProps} from '@ngrx/store';
+import { createActionGroup, props} from '@ngrx/store';
+
+import { LangToggler } from '../online-cv/components/lang-toggler/models/lang-toggler.model';
+import { IOnlineCv } from '../online-cv/models/online-cv.model';
+
 
 export const OnlineCvActions = createActionGroup({
-  source: 'OnlineCvData',
+  source: 'OnlineCvState',
   events: {
-    'Load OnlineCvData': emptyProps(),
+    'Load LangTogglerData': props<{ langTogglerData: LangToggler }>(),
+    'Load OnlineCvState': props<{ onlineCvState: IOnlineCv }>(),
+
   },
 });

@@ -1,0 +1,271 @@
+{
+  "profileData": {
+    "type": "profile",
+    "avatar": "assets/img/profile.jpg",
+    "name": "Denis Efremenko",
+    "tagline": "Frontend developer (Junior)"
+  },
+  "contactsData": {
+    "title": "Contacts",
+    "type": "contacts",
+    "items": [
+      {
+        "type": "email",
+        "link": "mailto:serb.efremenko@gmail.com",
+        "text": "serb.efremenko@gmail.com",
+        "icon": "assets/icon/email.svg"
+      },
+      {
+        "type": "phone",
+        "link": "tel:+(381)629381067",
+        "text": "+(381)629381067",
+        "icon": "assets/icon/phone.svg"
+      },
+      {
+        "type": "telegram",
+        "link": "https://t.me/DenViRus83",
+        "text": "@DenViRus83",
+        "icon": "assets/icon/telegram.svg"
+      },
+      {
+        "type": "linkedin",
+        "link": "https://linkedin.com/in/DenViRus",
+        "text": "Denis Efremenko",
+        "icon": "assets/icon/linkedin.svg"
+      },
+      {
+        "type": "github",
+        "link": "http://github.com/DenViRus",
+        "text": "DenViRus",
+        "icon": "assets/icon/github.svg"
+      },
+      {
+        "type": "document",
+        "link": "https://drive.google.com/file/d/1RohxH8YycrwkCcaFpa7pnNHhkhubQDjr/view?usp=sharing",
+        "text": "Resume PDF",
+        "icon": "assets/icon/document.svg"
+      }
+    ]
+  },
+  "educationData": {
+    "title": "Education",
+    "type": "education",
+    "items": [
+      {
+        "degree": "Marketing Specialist",
+        "meta": "Samara State Economic University (SSEU), Samara, Russia",
+        "time": "01.09.2001 - 21.06.2006",
+        "link": "http://www.ssau.ru"
+      }
+    ]
+  },
+  "coursesData": {
+    "title": "Courses",
+    "type": "courses",
+    "items": [
+      {
+        "degree": "\"Frontend developer\"",
+        "meta": "Netology",
+        "time": "05.10.2020 - 01.10.2022",
+        "link": "https://netology.ru/"
+      },
+      {
+        "degree": "\"Frontend\"",
+        "meta": "Epam UpSkill",
+        "time": "01.12.2022 - 01.08.2023",
+        "link": "https://www.epamglobalcampus.com/what-is-epam-upskill/"
+      },
+      {
+        "degree": "\"Angular\"",
+        "meta": "RS School",
+        "time": "01.10.2023 - 01.12.2023",
+        "link": "https://rs.school/"
+      }
+    ]
+  },
+  "languagesData": {
+    "title": "Languages",
+    "type": "languages",
+    "items": [
+      {
+        "name": "Russian",
+        "desc": "(Native)"
+      },
+      {
+        "name": "English",
+        "desc": "(B1)"
+      }
+    ]
+  },
+  "interestsData": {
+    "title": "Interests",
+    "type": "interests",
+    "items": [
+      {
+        "name": "Programming",
+        "icon": "assets/icon/programming.svg"
+      },
+      {
+        "name": "Reading",
+        "icon": "assets/icon/reading.svg"
+      }
+    ]
+  },
+  "summaryData": {
+    "title": "Career Profile",
+    "icon": "assets/icon/summary.svg",
+    "type": "summary",
+    "items": [
+      "Over the past 3 years, I have dedicated myself to mastering the intricacies of Frontend development, and I am now eager to take the next step in my career journey in the dynamic field of IT.",
+      "Driven by a passion for technology and innovation, I am particularly interested in internship and job opportunities where I can contribute meaningfully while continuing to grow and learn.",
+      "My ultimate goal is to join a team of professionals where I can leverage my knowledge of HTML, CSS, JavaScript, and Angular, and further develop my abilities in a collaborative environment."
+    ]
+  },
+  "experienceData": {
+    "title": "Professional Experience",
+    "icon": "assets/icon/experience.svg",
+    "type": "experience",
+    "items": [
+      {
+        "title": "Logistics Manager",
+        "time": "01.08.2016 - 17.08.2020",
+        "company": "Transportation Company. Exclusive contractor for Transneft in the transportation of oversized and heavy cargo.",
+        "responsibilities": {
+          "title": "responsibilities:",
+          "items": [
+            "Managing projects for the transportation of oversized cargo",
+            "Identifying customer needs and resource planning for client projects",
+            "Conducting negotiations",
+            "Handling the necessary regulatory documentation",
+            "Monitoring customer order execution at all stages"
+          ]
+        },
+        "achievements": {
+          "title": "achievements:",
+          "items": [
+            "Developed and implemented an algorithm for calculating resources and costs for customer order execution"
+          ]
+        }
+      },
+      {
+        "title": "Corporate Client Acquisition Manager",
+        "time": "01.11.2011 - 03.06.2016",
+        "company": "Industrial and Construction Equipment. The largest supplier of construction and industrial equipment in the Volga Region.",
+        "responsibilities": {
+          "title": "responsibilities:",
+          "items": [
+            "Building a database of potential clients",
+            "Active sales of construction and industrial equipment",
+            "Negotiating with clients and suppliers",
+            "Identifying client project needs and resource planning",
+            "Ensuring uninterrupted equipment and material deliveries for client tasks"
+          ]
+        },
+        "achievements": {
+          "title": "achievements:",
+          "items": [
+            "Achieved an average monthly sales volume of 10 million rubles",
+            "Attracted over 50 new clients, including more than 10 at the federal level",
+            "Maintained new client relationships for an average of over two years",
+            "Participated in major federal projects"
+          ]
+        }
+      },
+      {
+        "title": "Client Relations Manager",
+        "time": "02.04.2007 - 25.08.2011",
+        "company": "Building and Finishing Materials. Manufacturer of finishing materials.",
+        "responsibilities": {
+          "title": "responsibilities:",
+          "items": [
+            "Active sales",
+            "Conducting negotiations at the top management level",
+            "Planning and developing new projects"
+          ]
+        },
+        "achievements": {
+          "title": "achievements:",
+          "items": [
+            "Achieved a personal monthly sales volume exceeding 5 million rubles",
+            "Established two new company branches in different regions of the country"
+          ]
+        }
+      }
+    ]
+  },
+  "projectsData": {
+    "title": "Projects",
+    "type": "projects",
+    "icon": "assets/icon/projects.svg",
+    "items": [
+      {
+        "title": "Web Layout",
+        "type": "layout",
+        "icon": "assets/icon/layout.svg",
+        "items": [
+          {
+            "title": "Shelter",
+            "desc": "A responsive layout for a pet adoption site.",
+            "link": "https://denvirus.github.io/Shelter/src/pages/main/main.html"
+          }
+        ]
+      },
+      {
+        "title": "JavaScript",
+        "type": "javascript",
+        "icon": "assets/icon/javascript.svg",
+        "items": [
+          {
+            "title": "Bookshop",
+            "desc": "A simple bookshop app (html, css, js).",
+            "link": "https://denvirus.github.io/Book-Shop/src/pages/bookShop/bookShop.html"
+          },
+          {
+            "title": "English for kids",
+            "desc": "A simple app for learning English words (html, css, js).",
+            "link": "https://denvirus.github.io/task-english-for-kids/src/index.html"
+          }
+        ]
+      },
+      {
+        "title": "Angular",
+        "type": "angular",
+        "icon": "assets/icon/angular.svg",
+        "items": [
+          {
+            "title": "Furniture Store",
+            "desc": "A simple online furniture store (Angular).",
+            "link": "https://denvirus.github.io/furniture-store-app/"
+          }
+        ]
+      }
+    ]
+  },
+  "skillsData": {
+    "title": "Skills & Proficiency",
+    "type": "skills",
+    "icon": "assets/icon/skills.svg",
+    "items": [
+      {
+        "type": "layout",
+        "title": "HTML5 & CSS3",
+        "level": 65
+      },
+      {
+        "type": "javascript",
+        "title": "JavaScript",
+        "level": 75
+      },
+      {
+        "type": "typescript",
+        "title": "TypeScript",
+        "level": 35
+      },
+      {
+        "type": "angular",
+        "title": "Angular",
+        "level": 50
+      }
+    ]
+  }
+}

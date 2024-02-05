@@ -1,0 +1,271 @@
+{
+  "profileData": {
+    "type": "profile",
+    "avatar": "assets/img/profile.jpg",
+    "name": "Денис Ефременко",
+    "tagline": "Фронтенд разработчик (Junior)"
+  },
+  "contactsData": {
+    "title": "Контакты",
+    "type": "contacts",
+    "items": [
+      {
+        "type": "email",
+        "link": "mailto:serb.efremenko@gmail.com",
+        "text": "serb.efremenko@gmail.com",
+        "icon": "assets/icon/email.svg"
+      },
+      {
+        "type": "phone",
+        "link": "tel:+(381)629381067",
+        "text": "+(381)629381067",
+        "icon": "assets/icon/phone.svg"
+      },
+      {
+        "type": "telegram",
+        "link": "https://t.me/DenViRus83",
+        "text": "@DenViRus83",
+        "icon": "assets/icon/telegram.svg"
+      },
+      {
+        "type": "linkedin",
+        "link": "https://linkedin.com/in/DenViRus",
+        "text": "Денис Ефременко",
+        "icon": "assets/icon/linkedin.svg"
+      },
+      {
+        "type": "github",
+        "link": "http://github.com/DenViRus",
+        "text": "DenViRus",
+        "icon": "assets/icon/github.svg"
+      },
+      {
+        "type": "document",
+        "link": "https://drive.google.com/file/d/1Jnz5v8jZVWkbKEPx2n1_bcW0KGI14Uul/view?usp=sharing",
+        "text": "Resume PDF",
+        "icon": "assets/icon/document.svg"
+      }
+    ]
+  },
+  "educationData": {
+    "title": "Образование",
+    "type": "education",
+    "items": [
+      {
+        "degree": "Специалист по маркетингу",
+        "meta": "Самарский государственный экономический университет (СГЭУ), Самара, Россия",
+        "time": "01.09.2001 - 21.06.2006",
+        "link": "http://www.ssau.ru"
+      }
+    ]
+  },
+  "coursesData": {
+    "title": "Курсы",
+    "type": "courses",
+    "items": [
+      {
+        "degree": "\"Фронтенд-разработчик\"",
+        "meta": "Нетология",
+        "time": "05.10.2020 - 01.10.2022",
+        "link": "https://netology.ru/"
+      },
+      {
+        "degree": "\"Frontend\"",
+        "meta": "Epam UpSkill",
+        "time": "01.12.2022 - 01.08.2023",
+        "link": "https://www.epamglobalcampus.com/what-is-epam-upskill/"
+      },
+      {
+        "degree": "\"Angular\"",
+        "meta": "RS School",
+        "time": "01.10.2023 - 01.12.2023",
+        "link": "https://rs.school/"
+      }
+    ]
+  },
+  "languagesData": {
+    "title": "Языки",
+    "type": "languages",
+    "items": [
+      {
+        "name": "Русский",
+        "desc": "(Родной)"
+      },
+      {
+        "name": "Английский",
+        "desc": "(B1)"
+      }
+    ]
+  },
+  "interestsData": {
+    "title": "Интересы",
+    "type": "interests",
+    "items": [
+      {
+        "name": "Программирование",
+        "icon": "assets/icon/programming.svg"
+      },
+      {
+        "name": "Чтение",
+        "icon": "assets/icon/reading.svg"
+      }
+    ]
+  },
+  "summaryData": {
+    "title": "Кратко О Себе",
+    "icon": "assets/icon/summary.svg",
+    "type": "summary",
+    "items": [
+      "В последние три года я углубленно занимался фронтенд-разработкой и теперь готов продвигаться дальше в сфере IT.",
+      "Увлекаясь технологиями и инновациями, я крайне мотивирован в поиске стажировки или работы, где я смогу внести свой вклад, продолжая при этом развиваться и учиться.",
+      "Моя главная цель — стать частью профессиональной команды, где я смогу применить свои знания в HTML, CSS, JavaScript и Angular, а также расширить свои навыки, работая в команде."
+    ]
+  },
+  "experienceData": {
+    "title": "Профессиональный Опыт",
+    "icon": "assets/icon/experience.svg",
+    "type": "experience",
+    "items": [
+      {
+        "title": "Менеджер по логистике",
+        "time": "01.08.2016 - 17.08.2020",
+        "company": "Транспортная компания. Эксклюзивный подрядчик «Транснефти» по перевозке негабаритных и тяжеловесных грузов.",
+        "responsibilities": {
+          "title": "обязанности:",
+          "items": [
+            "Управление проектами по перевозке негабаритных грузов",
+            "Выявление потребностей клиентов и планирование ресурсов для клиентских проектов",
+            "Проведение переговоров",
+            "Оформление необходимой нормативной документации",
+            "Контроль исполнения заказов клиентов на всех этапах"
+          ]
+        },
+        "achievements": {
+          "title": "достижения:",
+          "items": [
+            "Разработал и внедрил алгоритм расчета ресурсов и затрат на выполнение заказов клиентов"
+          ]
+        }
+      },
+      {
+        "title": "Менеджер отдела корпоративных клиентов",
+        "time": "01.11.2011 - 03.06.2016",
+        "company": "Промышленное и строительное оборудование. Крупнейший поставщик строительного и промышленного оборудования в Поволжье.",
+        "responsibilities": {
+          "title": "обязанности:",
+          "items": [
+            "Формирование базы потенциальных клиентов",
+            "Активные продажи строительного и промышленного оборудования",
+            "Ведение переговоров c клиентами и поставщиками",
+            "Определение потребностей проекта клиента и планирование ресурсов",
+            "Обеспечение бесперебойных поставок оборудования и материалов под задачи клиента"
+          ]
+        },
+        "achievements": {
+          "title": "достижения:",
+          "items": [
+            "Достигнут среднемесячный объем продаж 10 млн рублей",
+            "Привлек более 50 новых клиентов, в том числе более 10 федерального уровня",
+            "Поддерживал партнерские отношения c новыми клиентами в среднем более двух лет",
+            "Участвовал в крупных федеральных проектах"
+          ]
+        }
+      },
+      {
+        "title": "Менеджер по работе c клиентами",
+        "time": "02.04.2007 - 25.08.2011",
+        "company": "Строительные и отделочные материалы. Производитель отделочных материалов.",
+        "responsibilities": {
+          "title": "обязанности:",
+          "items": [
+            "Активные продажи",
+            "Проведение переговоров на уровне высшего руководства",
+            "Планирование и разработка новых проектов"
+          ]
+        },
+        "achievements": {
+          "title": "достижения:",
+          "items": [
+            "Достигнут личный ежемесячный объем продаж, превышающий 5 миллионов рублей",
+            "Открыто два новых филиала компании в разных регионах страны."
+          ]
+        }
+      }
+    ]
+  },
+  "projectsData": {
+    "title": "Проекты",
+    "type": "projects",
+    "icon": "assets/icon/projects.svg",
+    "items": [
+      {
+        "title": "Верстка",
+        "type": "layout",
+        "icon": "assets/icon/layout.svg",
+        "items": [
+          {
+            "title": "Shelter",
+            "desc": "Верстка сайта по усыновлению домашних животных.",
+            "link": "https://denvirus.github.io/Shelter/src/pages/main/main.html"
+          }
+        ]
+      },
+      {
+        "title": "JavaScript",
+        "type": "javascript",
+        "icon": "assets/icon/javascript.svg",
+        "items": [
+          {
+            "title": "Bookshop",
+            "desc": "Приложение книжного магазина (html, css, js).",
+            "link": "https://denvirus.github.io/Book-Shop/src/pages/bookShop/bookShop.html"
+          },
+          {
+            "title": "English for kids",
+            "desc": "Приложение для изучения английских слов (html, css, js).",
+            "link": "https://denvirus.github.io/task-english-for-kids/src/index.html"
+          }
+        ]
+      },
+      {
+        "title": "Angular",
+        "type": "angular",
+        "icon": "assets/icon/angular.svg",
+        "items": [
+          {
+            "title": "Furniture Store",
+            "desc": "Интернет-магазин мебели (Angular).",
+            "link": "https://denvirus.github.io/furniture-store-app/"
+          }
+        ]
+      }
+    ]
+  },
+  "skillsData": {
+    "title": "Навыки и Технологии",
+    "type": "skills",
+    "icon": "assets/icon/skills.svg",
+    "items": [
+      {
+        "type": "layout",
+        "title": "HTML5 & CSS3",
+        "level": 65
+      },
+      {
+        "type": "javascript",
+        "title": "JavaScript",
+        "level": 75
+      },
+      {
+        "type": "typescript",
+        "title": "TypeScript",
+        "level": 35
+      },
+      {
+        "type": "angular",
+        "title": "Angular",
+        "level": 50
+      }
+    ]
+  }
+}
