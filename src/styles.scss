@@ -152,6 +152,28 @@ body {
                   .level-bar-inner {
                     height: var(--section-item-FZ);
                     background: var(--theme-color);
+                    animation: pulseWidth 2s infinite alternate;
+                  }
+
+                  @keyframes pulseWidth {
+                    0% {
+                      width: var(--level-width);
+                    }
+                    20% {
+                      width: var(--level-width-5);
+                    }
+                    40% {
+                      width: var(--level-width);
+                    }
+                    60% {
+                      width: var(--level-width-10);
+                    }
+                    80% {
+                      width: var(--level-width);
+                    }
+                    100% {
+                      width: var(--level-width-15);
+                    }
                   }
                 }
               }
@@ -200,17 +222,34 @@ body {
 
                       .detail-item-link-box {
                         position: absolute;
-                        right: 0;
+                        right: 3rem;
                         color: var(--text-grey);
                         flex: 30%;
+                        font-size: 1.5rem;
+                        border-radius: 20%;
+                        transition: scale 0.2s ease-in-out;
+                        animation: pulse 1s infinite alternate;
 
                         .detail-item-link {
                           text-transform: uppercase;
                           font-weight: 700;
+                        }
 
-                          &:hover {
+                        &:hover {
+                          animation: pulse 1s infinite alternate paused;
+                          scale: 1.1;
+                          .detail-item-link {
                             text-decoration: underline;
                           }
+                        }
+                      }
+
+                      @keyframes pulse {
+                        0% {
+                          transform: scale(1);
+                        }
+                        100% {
+                          transform: scale(1.1);
                         }
                       }
                     }

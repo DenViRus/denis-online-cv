@@ -6,17 +6,17 @@
     {
       "type": "layout",
       "title": "HTML5 & CSS3",
-      "level": 70
+      "level": 65
     },
     {
       "type": "javascript",
       "title": "JavaScript",
-      "level": 70
+      "level": 75
     },
     {
       "type": "typescript",
       "title": "TypeScript",
-      "level": 50
+      "level": 35
     },
     {
       "type": "angular",
