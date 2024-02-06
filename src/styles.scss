@@ -152,7 +152,8 @@ body {
                   .level-bar-inner {
                     height: var(--section-item-FZ);
                     background: var(--theme-color);
-                    animation: pulseWidth 2s infinite alternate;
+                    opacity: 0.5;
+                    animation: pulseWidth 1s infinite alternate;
                   }
 
                   @keyframes pulseWidth {
