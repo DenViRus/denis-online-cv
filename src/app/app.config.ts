@@ -6,6 +6,7 @@ import { provideState, provideStore } from '@ngrx/store';
 import { provideStoreDevtools } from '@ngrx/store-devtools';
 
 import { routes } from './app.routes';
+import { CvDataEffects } from './redux/cv-data.effects';
 import { OnlineCvReducer } from './redux/cv-data.reducer';
 
 export const appConfig: ApplicationConfig = {
@@ -15,6 +16,6 @@ export const appConfig: ApplicationConfig = {
     provideStore(),
     provideState({ name: 'onlineCvState', reducer: OnlineCvReducer }),
     provideStoreDevtools({ maxAge: 25, logOnly: !isDevMode() }),
-    provideEffects(),
+    provideEffects(CvDataEffects),
   ],
 };

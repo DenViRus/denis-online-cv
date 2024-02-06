@@ -24,11 +24,13 @@ export class LangTogglerComponent implements OnInit, OnDestroy {
       .select(selectLangTogglerData)
       .pipe(tap((langTogglerData) => (this.langTogglerData = langTogglerData)))
       .subscribe();
+    this.store.dispatch(OnlineCvActions.loadLangTogglerData({ langTogglerData: this.langTogglerData }));
   }
 
   onToggleLang() {
     this.langTogglerData = this.langTogglerData === LangToggler.EN ? LangToggler.RU : LangToggler.EN;
     this.store.dispatch(OnlineCvActions.loadLangTogglerData({ langTogglerData: this.langTogglerData }));
+
   }
 
   ngOnDestroy() {
