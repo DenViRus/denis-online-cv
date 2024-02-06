@@ -1,4 +1,4 @@
-import { provideHttpClient, withFetch } from '@angular/common/http';
+import { provideHttpClient } from '@angular/common/http';
 import { ApplicationConfig, isDevMode } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { provideEffects } from '@ngrx/effects';
@@ -12,7 +12,7 @@ import { OnlineCvReducer } from './redux/cv-data.reducer';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
-    provideHttpClient(withFetch()),
+    provideHttpClient(),
     provideStore(),
     provideState({ name: 'onlineCvState', reducer: OnlineCvReducer }),
     provideStoreDevtools({ maxAge: 25, logOnly: !isDevMode() }),
