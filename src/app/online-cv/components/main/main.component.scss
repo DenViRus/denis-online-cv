@@ -1,4 +1,9 @@
 :host {
   grid-column: span 7;
   order: 1;
+
+  @media (max-width: 1100px) {
+    grid-column: span 6;
+    order: 1;
+  }
 }

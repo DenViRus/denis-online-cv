@@ -47,8 +47,8 @@ body {
           align-items: center;
           margin-bottom: 1.5rem;
           .section-block-icon {
-            width: 4rem;
-            height: 4rem;
+            width: var(--section-icon-size);
+            height: var(--section-icon-size);
             background-color: var(--section-title-color);
             background-repeat: no-repeat;
             background-size: 60%;
@@ -82,6 +82,7 @@ body {
         }
 
         .section-block-paragraph {
+          font-size: var(--section-paragraph-FZ);
           text-indent: 2rem;
         }
 
@@ -99,7 +100,7 @@ body {
 
                 .meta-title {
                   color: var(--text-color);
-                  font-size: 2rem;
+                  font-size: var(--meta-title-FZ);
                   font-weight: 500;
                   flex: 70%;
                 }
@@ -110,6 +111,11 @@ body {
                   top: 0;
                   color: var(--text-grey);
                   flex: 30%;
+                  font-size: var(--section-item-FZ);
+
+                  @media (max-width: 1000px){
+                    position: static;
+                  }
                 }
 
                 .meta-org {
@@ -137,6 +143,10 @@ body {
                   width: 2rem;
                   height: 2rem;
                   margin: 0 1rem 0 2rem;
+
+                  @media (max-width: 1000px){
+                    display: none;
+                  }
                 }
 
                 .level-title {
@@ -177,11 +187,22 @@ body {
                     }
                   }
                 }
+
+                @media (max-width: 1000px){
+                  display: block;
+                }
               }
 
               .meta-company {
                 margin-bottom: 1rem;
                 color: var(--text-grey);
+
+                @media (max-width: 1000px){
+                  color: var(--section-title-color);
+                  font-weight: 500;
+                  font-size: var(--detail-list-FZ);
+
+                }
               }
             }
 
@@ -193,7 +214,7 @@ body {
 
                 .detail-list {
                   margin: 0 0 2rem 3rem;
-                  font-size: 1.6rem;
+                  font-size: var(--detail-list-FZ);
 
                   .detail-item {
                     list-style: disc;
@@ -212,12 +233,17 @@ body {
 
                         .detail-item-heading {
                           color: var(--section-title-color);
-                          font-size: 2rem;
+                          font-size: var(--detail-heading-FZ);
                         }
 
                         .detail-item-desc {
                           color: var(--text-grey);
-                          font-size: 1.8rem;
+                          font-size: var(--detail-desc-FZ);
+
+                          @media (max-width: 900px) {
+                            color: var(--section-title-color);
+                            font-weight: 500;
+                          }
                         }
                       }
 
@@ -227,7 +253,7 @@ body {
                         right: 3rem;
                         color: var(--text-grey);
                         flex: 30%;
-                        font-size: 1.5rem;
+                        font-size: var(--detail-link-FZ);
                         border-radius: 20%;
                         transition: scale 0.2s ease-in-out;
                         animation: pulse 1s infinite alternate;
@@ -244,6 +270,16 @@ body {
                             text-decoration: underline;
                           }
                         }
+
+                        @media (max-width: 900px) {
+                          position: static;
+                          margin-left: 3rem;
+                          animation: none;
+                          &:hover {
+                            scale: 1;
+
+                          }
+                        }
                       }
 
                       @keyframes pulse {
@@ -253,6 +289,11 @@ body {
                         100% {
                           transform: scale(1.1);
                         }
+                      }
+
+
+                      @media (max-width: 900px) {
+                        display: block;
                       }
                     }
                   }
@@ -283,7 +324,7 @@ body {
           background: rgba(0, 0, 0, 0.2);
           text-align: center;
           .avatar {
-            max-width: 15rem;
+            max-width: var(--sidebar-avatar-size);
             margin-bottom: 1.5rem;
             border: 0px solid var(--white-color);
             border-radius: 100%;
@@ -291,14 +332,14 @@ body {
           }
 
           .name {
-            font-size: 3rem;
+            font-size: var(--sidebar-name-FZ);
             font-weight: 900;
             margin-bottom: 1rem;
           }
 
           .tagline {
             color: var(--muted-white);
-            font-size: 2rem;
+            font-size: var(--sidebar-tagline-FZ);
             font-weight: 400;
           }
         }
