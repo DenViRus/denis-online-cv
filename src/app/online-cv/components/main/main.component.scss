@@ -6,4 +6,7 @@
     grid-column: span 6;
     order: 1;
   }
+  @media (max-width: 760px) {
+    display: none;
+  }
 }

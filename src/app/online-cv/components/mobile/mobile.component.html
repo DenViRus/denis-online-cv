@@ -1,0 +1,44 @@
+<div class="mobile-box" id="onlineCVmobileBX">
+
+  <div class="mob-block mob-block--{{ profileData.type }}">
+    <div class="mob-block-img-box">
+      <img
+        class="mob-block-img"
+        src="{{ profileData.avatar }}"
+        alt="{{ profileData.type }} picture"
+      />
+    </div>
+    <div class="mob-block-desc-box">
+      <h1 class="mob-block-name">{{ profileData.name }}</h1>
+      <h3 class="mob-block-tagline">{{ profileData.tagline }}</h3>
+    </div>
+  </div>
+
+  <div class="mob-block mob-block--{{ contactsData.type }}">
+    <h2 class="mob-block-title">{{ contactsData.type }}</h2>
+    <ul class="mob-block-list mob-block-list--{{ contactsData.type }}">
+      @for (item of contactsData.items; track $index) {
+      <li class="mob-block-item">
+        <a class="mob-item-link" href="{{ item.link }}" target="_blank">
+          <img
+            class="mob-item-icon"
+            src="{{ item.icon }}"
+            alt="icon {{ item.type }}"
+          />
+        </a>
+      </li>
+      }
+    </ul>
+  </div>
+
+  <div class="mob-block mob-block--{{ summaryData.type }}">
+    <h2 class="mob-block-title">{{ summaryData.title }}</h2>
+    <div class="mob-block-list mob-block-list--{{ summaryData.type }}">
+    @for (item of summaryData.items; track $index) {
+    <p class="mob-block-paragraph">{{ item }}</p>
+    }
+    </div>
+
+  </div>
+
+</div>
