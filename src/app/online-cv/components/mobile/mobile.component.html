@@ -1,11 +1,10 @@
 <div class="mobile-box" id="onlineCVmobileBX">
-
   <div class="mob-block mob-block--{{ profileData.type }}">
     <div class="mob-block-img-box">
       <img
         class="mob-block-img"
         src="{{ profileData.avatar }}"
-        alt="{{ profileData.type }} picture"
+        alt="{{ profileData.type }} icon"
       />
     </div>
     <div class="mob-block-desc-box">
@@ -16,6 +15,7 @@
 
   <div class="mob-block mob-block--{{ contactsData.type }}">
     <h2 class="mob-block-title">{{ contactsData.type }}</h2>
+
     <ul class="mob-block-list mob-block-list--{{ contactsData.type }}">
       @for (item of contactsData.items; track $index) {
       <li class="mob-block-item">
@@ -32,13 +32,79 @@
   </div>
 
   <div class="mob-block mob-block--{{ summaryData.type }}">
-    <h2 class="mob-block-title">{{ summaryData.title }}</h2>
-    <div class="mob-block-list mob-block-list--{{ summaryData.type }}">
-    @for (item of summaryData.items; track $index) {
-    <p class="mob-block-paragraph">{{ item }}</p>
-    }
+    <h2
+      class="mob-block-title"
+      (click)="onActivate(ActivationKeys.SUMMARY)"
+      (keydown)="onActivate(ActivationKeys.SUMMARY)"
+      tabindex="0"
+    >
+      {{ summaryData.title }}
+      <img
+        class="mob-block-activate"
+        [class.mob-block-activate--active]="activationBlock.summary"
+        src="assets/icon/activate.svg"
+        alt="activate icon"
+      />
+    </h2>
+    <div
+      class="mob-block-list mob-block-list--{{ summaryData.type }}"
+      [class.mob-block-list--active]="activationBlock.summary"
+    >
+      @for (item of summaryData.items; track $index) {
+      <p class="mob-block-paragraph">{{ item }}</p>
+      }
     </div>
-
   </div>
 
+  <div class="mob-block mob-block--{{ projectsData.type }}">
+    <h2
+      class="mob-block-title"
+      (click)="onActivate(ActivationKeys.PROJECTS)"
+      (keydown)="onActivate(ActivationKeys.PROJECTS)"
+      tabindex="0"
+    >
+      {{ projectsData.title }}
+      <img
+        class="mob-block-activate"
+        [class.mob-block-activate--active]="activationBlock.projects"
+        src="assets/icon/activate.svg"
+        alt="activate icon"
+      />
+    </h2>
+    <ul
+      class="mob-block-list mob-block-list--{{ projectsData.type }}"
+      [class.mob-block-list--active]="activationBlock.projects"
+    >
+      @for (item of projectsData.items; track $index) {
+      <li class="mob-block-item mob-block-item--{{ item.type }}">
+        <h3 class="mob-block-item-title">
+          <img
+            class="mob-block-item-icon"
+            src="{{ item.icon }}"
+            alt="icon {{ item.type }}"
+          />
+          {{ item.title }}
+        </h3>
+        <div class="mob-block-item-details">
+          <ul class="mob-detail-list">
+            @for (item of item.items; track $index) {
+            <li class="mob-details-item">
+              <h5 class="mob-details-item-title">
+                {{ item.title }}
+                <a
+                  class="mob-details-item-link"
+                  href="{{ item.link }}"
+                  target="_blank"
+                  >demo</a
+                >
+              </h5>
+              <div class="mob-details-item-desc">{{ item.desc }}</div>
+            </li>
+            }
+          </ul>
+        </div>
+      </li>
+      }
+    </ul>
+  </div>
 </div>
