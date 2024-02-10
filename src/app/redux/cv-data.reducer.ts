@@ -39,14 +39,18 @@ export const initialState: OnlineCvState = {
 
 export const OnlineCvReducer = createReducer(
   initialState,
-  on(OnlineCvActions.loadLangTogglerData, (state, { langTogglerData }): OnlineCvState => ({
-    ...state,
-    langTogglerData: langTogglerData,
-  })),
-  on(OnlineCvActions.loadOnlineCvData, (state, { onlineCvData }): OnlineCvState => ({
-    ...state,
-    onlineCvData: onlineCvData,
-  }))
-
-
+  on(
+    OnlineCvActions.loadLangTogglerData,
+    (state, { langTogglerData }): OnlineCvState => ({
+      ...state,
+      langTogglerData: langTogglerData,
+    })
+  ),
+  on(
+    OnlineCvActions.loadOnlineCvData,
+    (state, { onlineCvData }): OnlineCvState => ({
+      ...state,
+      onlineCvData: onlineCvData,
+    })
+  )
 );

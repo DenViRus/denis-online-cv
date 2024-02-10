@@ -107,4 +107,76 @@
       }
     </ul>
   </div>
+
+  <div class="mob-block mob-block--{{ coursesData.type }}">
+    <h2
+      class="mob-block-title"
+      (click)="onActivate(ActivationKeys.COURSES)"
+      (keydown)="onActivate(ActivationKeys.COURSES)"
+      tabindex="0"
+    >
+      {{ coursesData.title }}
+      <img
+        class="mob-block-activate"
+        [class.mob-block-activate--active]="activationBlock.courses"
+        src="assets/icon/activate.svg"
+        alt="activate icon"
+      />
+    </h2>
+
+    <ul
+      class="mob-block-list mob-block-list--{{ coursesData.type }}"
+      [class.mob-block-list--active]="activationBlock.courses"
+    >
+      @for (item of coursesData.items; track $index) {
+      <li class="mob-block-item">
+        <h3 class="mob-block-item-title">{{ item.degree }}</h3>
+        <div class="mob-block-item-meta">
+          <div class="mob-meta-time">{{ item.time }}</div>
+          <h5 class="mob-meta-title">
+            {{ item.meta }}
+            <a class="mob-meta-link" href="{{ item.link }}" target="_blank">
+              >>>
+            </a>
+          </h5>
+        </div>
+      </li>
+      }
+    </ul>
+  </div>
+
+  <div class="mob-block mob-block--{{ skillsData.type }}">
+    <h2
+      class="mob-block-title"
+      (click)="onActivate(ActivationKeys.SKILLS)"
+      (keydown)="onActivate(ActivationKeys.SKILLS)"
+      tabindex="0"
+    >
+      {{ skillsData.title }}
+      <img
+        class="mob-block-activate"
+        [class.mob-block-activate--active]="activationBlock.skills"
+        src="assets/icon/activate.svg"
+        alt="activate icon"
+      />
+    </h2>
+    <ul
+      class="mob-block-list mob-block-list--{{ skillsData.type }}"
+      [class.mob-block-list--active]="activationBlock.skills"
+    >
+      @for (item of skillsData.items; track $index) {
+      <li class="mob-block-item">
+        <div class="mob-block-item-flex">
+          <h3 class="mob-flex-title">{{ item.title }}</h3>
+          <div class="mob-flex-level">
+            <div
+              class="mob-flex-level-inner"
+              [style.width.%]="item.level"
+            ></div>
+          </div>
+        </div>
+      </li>
+      }
+    </ul>
+  </div>
 </div>

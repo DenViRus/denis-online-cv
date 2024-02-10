@@ -5,8 +5,6 @@
 
 html,
 body {
-  height: 100%;
-  width: 100%;
   font-size: 62.5%;
   line-height: 1.2;
   -webkit-text-size-adjust: 100%;
@@ -22,8 +20,6 @@ body {
 }
 
 .online-cv-box {
-  height: 100%;
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   background: var(--theme-color);
@@ -258,8 +254,8 @@ body {
                         position: absolute;
                         top: 0;
                         right: 3rem;
-                        color: var(--text-grey);
                         flex: 30%;
+
                         font-size: var(--detail-link-FZ);
                         border-radius: 20%;
                         transition: scale 0.2s ease-in-out;
@@ -271,7 +267,7 @@ body {
                         }
 
                         &:hover {
-                          animation: pulse 1s infinite alternate paused;
+                          animation: pulse 1s paused;
                           scale: 1.1;
                           .detail-item-link {
                             text-decoration: underline;
@@ -426,10 +422,13 @@ body {
   // mobile start
   .mobile-box {
     width: 100%;
-    height: 100%;
     font-family: var(--font-secondary);
     color: var(--white-color);
     display: none;
+
+    a {
+      color: var(--section-title-color);
+    }
 
     .mob-block {
       position: relative;
@@ -442,8 +441,10 @@ body {
         padding: 1rem 2rem;
       }
 
+      &--summary,
       &--projects,
-      &--summary {
+      &--courses,
+      &--skills {
         .mob-block-title {
           cursor: pointer;
         }
@@ -502,8 +503,10 @@ body {
           margin-top: 1rem;
         }
 
+        &--summary,
         &--projects,
-        &--summary {
+        &--courses,
+        &--skills {
           background-color: var(--white-color);
           overflow: hidden;
 
@@ -528,7 +531,6 @@ body {
           font-size: var(--mobile-item-FZ);
           color: var(--text-color);
           font-weight: 500;
-
           .mob-item-link {
             .mob-item-icon {
               width: var(--mobile-icon-size);
@@ -556,22 +558,43 @@ body {
           }
 
           .mob-block-item-details {
-            margin: 0 0 2rem 3rem;
+            margin: 0 0 2rem 2rem;
             .mob-detail-list {
               .mob-details-item {
                 list-style: disc;
+                margin-left: 1rem;
 
                 .mob-details-item-title {
+                  position: relative;
                   color: var(--section-title-color);
                   font-size: var(--mob-details-title-FZ);
                   margin-bottom: 0.5rem;
 
                   .mob-details-item-link {
+                    position: absolute;
                     font-size: var(--mob-details--link-FZ);
                     text-transform: uppercase;
                     font-weight: 700;
-                    color: var(--text-grey);
                     margin-left: 1rem;
+                    animation: shake 0.2s infinite alternate;
+                    top: 0.5rem;
+
+                    &:hover {
+                      animation: shake 0.5s paused;
+                      text-decoration: underline;
+                    }
+                  }
+                }
+
+                @keyframes shake {
+                  0% {
+                    transform: rotate(2deg);
+                    color: var(--text-grey);
+                  }
+
+                  100% {
+                    transform: rotate(-2deg);
+                    color: var(--section-title-color);
                   }
                 }
 
@@ -586,7 +609,84 @@ body {
               }
             }
           }
+
+          .mob-block-item-meta {
+            margin-bottom: 2rem;
+
+            .mob-meta-title {
+              color: var(--section-title-color);
+              font-size: var(--mob-details-title-FZ);
+
+              .mob-meta-link {
+                position: relative;
+                text-transform: uppercase;
+                font-weight: 700;
+                margin-left: 1rem;
+                animation: follow 0.2s infinite alternate;
+
+                &:hover {
+                  animation: follow 0.5s paused;
+                }
+              }
+            }
+
+            @keyframes follow {
+              0% {
+                left: 0.2rem;
+              }
+
+              100% {
+                left: -0.2rem;
+              }
+            }
+
+            .mob-meta-time {
+              color: var(--text-grey);
+              font-weight: 500;
+            }
+          }
+
+          .mob-block-item-flex {
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+
+
+            .mob-flex-title {
+              color: var(--section-title-color);
+              font-size: var(--mob-details-title-FZ);
+              font-weight: 500;
+
+            }
+
+            .mob-flex-level {
+              width: 70%;
+              height: var(--mob-details-title-FZ);
+              background: var(--smoky-white);
+              margin-left: auto;
+
+              .mob-flex-level-inner {
+                height: var(--mob-details-title-FZ);
+                background: var(--theme-color);
+                opacity: 0.5;
+                animation: plus 1s infinite alternate;
+              }
+            }
+
+          }
+
+          &:nth-last-child(1) {
+            .mob-block-item-details,
+            .mob-block-item-meta,
+            .mob-block-item-flex {
+              margin-bottom: 0;
+            }
+          }
         }
+      }
+
+      &:nth-last-child(1) {
+        padding-bottom: 2rem;
       }
     }
 
