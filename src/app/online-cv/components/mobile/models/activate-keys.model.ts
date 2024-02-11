@@ -3,4 +3,5 @@ export enum IActivationKeys {
   PROJECTS = 'projects',
   COURSES = 'courses',
   SKILLS = 'skills',
+  EXPERIENCE = 'experience',
 }

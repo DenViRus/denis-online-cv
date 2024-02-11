@@ -3,6 +3,14 @@
 @import "./assets/scss/reset.scss";
 @import "./assets/scss/vars.scss";
 
+
+html {
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+  scrollbar-width: none;
+}
+
 html,
 body {
   font-size: 62.5%;
@@ -10,6 +18,8 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 body {
+  width: 100%;
+  min-height: 100vh;
   font-family: var(--font-main);
   color: var(--text-color-secondary);
   background: var(--smoky-white);
@@ -444,7 +454,8 @@ body {
       &--summary,
       &--projects,
       &--courses,
-      &--skills {
+      &--skills,
+      &--experience {
         .mob-block-title {
           cursor: pointer;
         }
@@ -506,13 +517,22 @@ body {
         &--summary,
         &--projects,
         &--courses,
-        &--skills {
+        &--skills,
+        &--experience {
           background-color: var(--white-color);
-          overflow: hidden;
 
           padding: 0 1rem 0 1rem;
           max-height: 0;
           transition: all 0.3s ease-out;
+
+          overflow: auto;
+
+          &::-webkit-scrollbar {
+            width: 0;
+          }
+          scrollbar-width: none;
+
+
 
           .mob-block-paragraph {
             color: var(--text-color);
@@ -559,10 +579,20 @@ body {
 
           .mob-block-item-details {
             margin: 0 0 2rem 2rem;
+
+            .mob-detail-box {
+              text-transform: capitalize;
+              margin-top: 2rem;
+
+              .mob-detail-title {
+                margin-bottom: 0.5rem;
+              }
+            }
             .mob-detail-list {
               .mob-details-item {
                 list-style: disc;
                 margin-left: 1rem;
+                font-size: var(--mob-details-item-FZ);
 
                 .mob-details-item-title {
                   position: relative;
@@ -572,7 +602,7 @@ body {
 
                   .mob-details-item-link {
                     position: absolute;
-                    font-size: var(--mob-details--link-FZ);
+                    font-size: var(--mob-details-link-FZ);
                     text-transform: uppercase;
                     font-weight: 700;
                     margin-left: 1rem;
@@ -644,6 +674,12 @@ body {
               color: var(--text-grey);
               font-weight: 500;
             }
+
+            .mob-meta-company {
+              color: var(--darker-grey);
+              font-size: var(--mob-meta-company-FZ);
+              font-weight: 500;
+            }
           }
 
           .mob-block-item-flex {
@@ -651,12 +687,10 @@ body {
             display: flex;
             align-items: center;
 
-
             .mob-flex-title {
               color: var(--section-title-color);
               font-size: var(--mob-details-title-FZ);
               font-weight: 500;
-
             }
 
             .mob-flex-level {
@@ -669,10 +703,9 @@ body {
                 height: var(--mob-details-title-FZ);
                 background: var(--theme-color);
                 opacity: 0.5;
-                animation: plus 1s infinite alternate;
+                transition: width 0.3s 0.3s ease-in-out;
               }
             }
-
           }
 
           &:nth-last-child(1) {

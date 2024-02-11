@@ -171,7 +171,7 @@
           <div class="mob-flex-level">
             <div
               class="mob-flex-level-inner"
-              [style.width.%]="item.level"
+              [style.width.%]="[showSkills ? item.level : 0]"
             ></div>
           </div>
         </div>
@@ -179,4 +179,56 @@
       }
     </ul>
   </div>
+
+  <div class="mob-block mob-block--{{ experienceData.type }}">
+    <h2
+      class="mob-block-title"
+      (click)="onActivate(ActivationKeys.EXPERIENCE)"
+      (keydown)="onActivate(ActivationKeys.EXPERIENCE)"
+      tabindex="0"
+    >
+      {{ experienceData.title }}
+      <img
+        class="mob-block-activate"
+        [class.mob-block-activate--active]="activationBlock.experience"
+        src="assets/icon/activate.svg"
+        alt="activate icon"
+      />
+    </h2>
+    <ul
+      class="mob-block-list mob-block-list--{{ experienceData.type }}"
+      [class.mob-block-list--active]="activationBlock.experience"
+    >
+    @for (item of experienceData.items; track $index) {
+      <li class="mob-block-item">
+        <h3 class="mob-block-item-title">{{ item.title }}</h3>
+        <div class="mob-block-item-meta">
+          <div class="mob-meta-time">{{ item.time }}</div>
+          <div class="mob-meta-company">{{ item.company }}</div>
+        </div>
+        <div class="mob-block-item-details">
+          <div class="mob-detail-box">
+            <h5 class="mob-detail-title">{{ item.responsibilities.title }}</h5>
+            <ul class="mob-detail-list">
+              @for (responsibility of item.responsibilities.items; track $index) {
+              <li class="mob-details-item">{{ responsibility }}</li>
+              }
+            </ul>
+          </div>
+          <div class="mob-detail-box">
+            <h5 class="mob-detail-title">{{ item.achievements.title }}</h5>
+            <ul class="mob-detail-list">
+              @for (achievement of item.achievements.items; track $index) {
+              <li class="mob-details-item">{{ achievement }}</li>
+              }
+            </ul>
+          </div>
+
+        </div>
+      </li>
+    }
+
+    </ul>
+  </div>
+
 </div>

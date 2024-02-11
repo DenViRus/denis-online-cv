@@ -1,19 +1,18 @@
-import { CommonModule } from '@angular/common';
-import { Component, HostBinding, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Subscription, tap } from 'rxjs';
 
 import {
   selectContactsData,
   selectCoursesData,
+  selectExperienceData,
   selectProfileData,
   selectProjectsData,
   selectSkillsData,
-  selectSummaryData,
-} from '../../../redux/cv-data.selectors';
+  selectSummaryData} from '../../../redux/cv-data.selectors';
+import { IExperience } from '../main/components/experience/models/experience.model';
 import { IProjects } from '../main/components/projects/models/projects.model';
 import { ISkills } from '../main/components/skills/models/skills.model';
-import { ISkillsItem } from '../main/components/skills/models/skills-item.model';
 import { ISummary } from '../main/components/summary/models/summary.model';
 import { IContacts } from '../sidebar/components/contacts/models/contacts.model';
 import { ICourses } from '../sidebar/components/courses/models/courses.model';
@@ -23,7 +22,7 @@ import { IActivationKeys } from './models/activate-keys.model';
 @Component({
   selector: 'app-mobile',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './mobile.component.html',
   styleUrl: './mobile.component.scss',
 })
@@ -34,11 +33,7 @@ export class MobileComponent implements OnInit, OnDestroy {
   public projectsData!: IProjects;
   public coursesData!: ICourses;
   public skillsData!: ISkills;
-
-  public layoutData!: ISkillsItem;
-  public javaScriptData!: ISkillsItem;
-  public typeScriptData!: ISkillsItem;
-  public angularData!: ISkillsItem;
+  public experienceData!: IExperience;
 
   public ActivationKeys = IActivationKeys;
 
@@ -47,7 +42,9 @@ export class MobileComponent implements OnInit, OnDestroy {
     [IActivationKeys.PROJECTS]: false,
     [IActivationKeys.COURSES]: false,
     [IActivationKeys.SKILLS]: false,
+    [IActivationKeys.EXPERIENCE]: false,
   };
+  public showSkills = false;
 
   private subscription!: Subscription;
 
@@ -82,28 +79,14 @@ export class MobileComponent implements OnInit, OnDestroy {
     this.subscription.add(coursesDataSubscription);
     const skillsDataSubscription = this.store
       .select(selectSkillsData)
-      .pipe(
-        tap((skillsData) => {
-          this.skillsData = skillsData;
-
-          if (this.skillsData && this.skillsData.items) {
-            this.layoutData = this.skillsData.items.find(
-              (item) => item.type === 'layout'
-            )!;
-            this.javaScriptData = skillsData.items.find(
-              (item) => item.type === 'javascript'
-            )!;
-            this.typeScriptData = skillsData.items.find(
-              (item) => item.type === 'typescript'
-            )!;
-            this.angularData = skillsData.items.find(
-              (item) => item.type === 'angular'
-            )!;
-          }
-        })
-      )
+      .pipe(tap((skillsData) => (this.skillsData = skillsData)))
       .subscribe();
     this.subscription.add(skillsDataSubscription);
+    const experienceDataSubscription = this.store
+      .select(selectExperienceData)
+      .pipe(tap((experienceData) => (this.experienceData = experienceData)))
+      .subscribe();
+    this.subscription.add(experienceDataSubscription);
   }
 
   onActivate(type: IActivationKeys) {
@@ -111,9 +94,8 @@ export class MobileComponent implements OnInit, OnDestroy {
       if (key !== type) this.activationBlock[key as IActivationKeys] = false;
     });
     this.activationBlock[type] = !this.activationBlock[type];
+    this.showSkills = this.activationBlock.skills;
   }
-
-  // @HostBinding
 
   ngOnDestroy() {
     this.subscription.unsubscribe();
