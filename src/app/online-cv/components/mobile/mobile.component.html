@@ -231,4 +231,28 @@
     </ul>
   </div>
 
+  <div class="mob-block mob-block--{{ languagesData.type }}">
+    <h2 class="mob-block-title">{{ languagesData.type }}</h2>
+    <ul class="mob-block-list mob-block-list--{{ languagesData.type }}">
+      @for (item of languagesData.items; track $index) {
+        <li class="mob-block-item">
+          {{item.name}}
+          <span class="item-desc">{{ item.desc }}</span>
+        </li>
+        }
+    </ul>
+  </div>
+
+  <div class="mob-block mob-block--{{ interestsData.type }}">
+    <h2 class="mob-block-title">{{ interestsData.type }}</h2>
+    <ul class="mob-block-list mob-block-list--{{ interestsData.type }}">
+      @for (item of interestsData.items; track $index) {
+        <li class="mob-block-item">
+          {{item.name}}
+          <img class="item-icon" src="{{item.icon}}" alt="icon {{item.name}}">
+        </li>
+        }
+    </ul>
+  </div>
+
 </div>

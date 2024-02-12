@@ -6,6 +6,8 @@ import {
   selectContactsData,
   selectCoursesData,
   selectExperienceData,
+  selectInterestsData,
+  selectLanguagesData,
   selectProfileData,
   selectProjectsData,
   selectSkillsData,
@@ -16,6 +18,8 @@ import { ISkills } from '../main/components/skills/models/skills.model';
 import { ISummary } from '../main/components/summary/models/summary.model';
 import { IContacts } from '../sidebar/components/contacts/models/contacts.model';
 import { ICourses } from '../sidebar/components/courses/models/courses.model';
+import { IInterests } from '../sidebar/components/interests/models/interests.model';
+import { ILanguages } from '../sidebar/components/languages/models/languages.model';
 import { IProfile } from '../sidebar/components/profile/models/profile.model';
 import { IActivationKeys } from './models/activate-keys.model';
 
@@ -34,6 +38,8 @@ export class MobileComponent implements OnInit, OnDestroy {
   public coursesData!: ICourses;
   public skillsData!: ISkills;
   public experienceData!: IExperience;
+  public languagesData!: ILanguages;
+  public interestsData!: IInterests;
 
   public ActivationKeys = IActivationKeys;
 
@@ -87,6 +93,16 @@ export class MobileComponent implements OnInit, OnDestroy {
       .pipe(tap((experienceData) => (this.experienceData = experienceData)))
       .subscribe();
     this.subscription.add(experienceDataSubscription);
+    const languagesDataSubscription = this.store
+      .select(selectLanguagesData)
+      .pipe(tap((languagesData) => (this.languagesData = languagesData)))
+      .subscribe();
+    this.subscription.add(languagesDataSubscription);
+    const interestsDataSubscription = this.store
+      .select(selectInterestsData)
+      .pipe(tap((interestsData) => (this.interestsData = interestsData)))
+      .subscribe();
+    this.subscription.add(interestsDataSubscription);
   }
 
   onActivate(type: IActivationKeys) {

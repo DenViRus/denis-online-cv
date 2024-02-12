@@ -3,7 +3,6 @@
 @import "./assets/scss/reset.scss";
 @import "./assets/scss/vars.scss";
 
-
 html {
   &::-webkit-scrollbar {
     width: 0;
@@ -30,6 +29,7 @@ body {
 }
 
 .online-cv-box {
+  min-height: calc(100vh - 6rem);
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   background: var(--theme-color);
@@ -532,8 +532,6 @@ body {
           }
           scrollbar-width: none;
 
-
-
           .mob-block-paragraph {
             color: var(--text-color);
             font-size: var(--mobile-item-FZ);
@@ -707,12 +705,27 @@ body {
               }
             }
           }
-
           &:nth-last-child(1) {
             .mob-block-item-details,
             .mob-block-item-meta,
             .mob-block-item-flex {
               margin-bottom: 0;
+            }
+          }
+        }
+
+        &--languages,
+        &--interests {
+          .mob-block-item {
+            color: var(--main-color);
+            margin: 0.5rem 0 0 1rem;
+
+            .item-desc {
+              color: var(--muted-white);
+            }
+
+            .item-icon {
+              width: var(--mobile-item-FZ);
             }
           }
         }
