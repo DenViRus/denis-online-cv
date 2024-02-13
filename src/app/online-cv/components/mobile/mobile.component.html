@@ -232,7 +232,7 @@
   </div>
 
   <div class="mob-block mob-block--{{ languagesData.type }}">
-    <h2 class="mob-block-title">{{ languagesData.type }}</h2>
+    <h2 class="mob-block-title">{{ languagesData.title }}</h2>
     <ul class="mob-block-list mob-block-list--{{ languagesData.type }}">
       @for (item of languagesData.items; track $index) {
         <li class="mob-block-item">
@@ -244,7 +244,7 @@
   </div>
 
   <div class="mob-block mob-block--{{ interestsData.type }}">
-    <h2 class="mob-block-title">{{ interestsData.type }}</h2>
+    <h2 class="mob-block-title">{{ interestsData.title }}</h2>
     <ul class="mob-block-list mob-block-list--{{ interestsData.type }}">
       @for (item of interestsData.items; track $index) {
         <li class="mob-block-item">
