@@ -166,15 +166,12 @@
     >
       @for (item of skillsData.items; track $index) {
       <li class="mob-block-item">
-        <div class="mob-block-item-flex">
-          <h3 class="mob-flex-title">{{ item.title }}</h3>
-          <div class="mob-flex-level">
-            <div
-              class="mob-flex-level-inner"
-              [style.width.%]="[showSkills ? item.level : 0]"
-            ></div>
-          </div>
-        </div>
+        <img
+          class="mob-list-item-icon"
+          src="{{ item.icon }}"
+          alt="icon {{ item.type }}"
+          title="{{ item.name }}"
+        />
       </li>
       }
     </ul>
@@ -199,7 +196,7 @@
       class="mob-block-list mob-block-list--{{ experienceData.type }}"
       [class.mob-block-list--active]="activationBlock.experience"
     >
-    @for (item of experienceData.items; track $index) {
+      @for (item of experienceData.items; track $index) {
       <li class="mob-block-item">
         <h3 class="mob-block-item-title">{{ item.title }}</h3>
         <div class="mob-block-item-meta">
@@ -210,7 +207,8 @@
           <div class="mob-detail-box">
             <h5 class="mob-detail-title">{{ item.responsibilities.title }}</h5>
             <ul class="mob-detail-list">
-              @for (responsibility of item.responsibilities.items; track $index) {
+              @for (responsibility of item.responsibilities.items; track $index)
+              {
               <li class="mob-details-item">{{ responsibility }}</li>
               }
             </ul>
@@ -223,11 +221,9 @@
               }
             </ul>
           </div>
-
         </div>
       </li>
-    }
-
+      }
     </ul>
   </div>
 
@@ -235,11 +231,11 @@
     <h2 class="mob-block-title">{{ languagesData.title }}</h2>
     <ul class="mob-block-list mob-block-list--{{ languagesData.type }}">
       @for (item of languagesData.items; track $index) {
-        <li class="mob-block-item">
-          {{item.name}}
-          <span class="item-desc">{{ item.desc }}</span>
-        </li>
-        }
+      <li class="mob-block-item">
+        {{ item.name }}
+        <span class="item-desc">{{ item.desc }}</span>
+      </li>
+      }
     </ul>
   </div>
 
@@ -247,12 +243,15 @@
     <h2 class="mob-block-title">{{ interestsData.title }}</h2>
     <ul class="mob-block-list mob-block-list--{{ interestsData.type }}">
       @for (item of interestsData.items; track $index) {
-        <li class="mob-block-item">
-          {{item.name}}
-          <img class="item-icon" src="{{item.icon}}" alt="icon {{item.name}}">
-        </li>
-        }
+      <li class="mob-block-item">
+        {{ item.name }}
+        <img
+          class="item-icon"
+          src="{{ item.icon }}"
+          alt="icon {{ item.name }}"
+        />
+      </li>
+      }
     </ul>
   </div>
-
 </div>

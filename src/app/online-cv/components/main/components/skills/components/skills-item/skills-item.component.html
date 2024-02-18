@@ -1,13 +1,8 @@
 <li class="section-block-item section-block-item--{{ itemData.type }}">
-  <div class="section-item-meta">
-    <div class="meta-box">
-      <h3 class="level-title">{{ itemData.title }}</h3>
-      <div class="level-bar">
-        <div
-        class="level-bar-inner"
-        [style.width.%]="itemData.level"
-        ></div>
-      </div>
-    </div>
-  </div>
+  <img
+    class="section-item-icon"
+    src="{{ itemData.icon }}"
+    alt="icon {{ itemData.type }}"
+    title="{{ itemData.name }}"
+  />
 </li>
