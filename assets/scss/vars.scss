@@ -49,6 +49,7 @@
   --mobile-icon-size: 3rem;
   --mobile-item-FZ: 2rem;
   --mob-item-title-FZ: 2.2rem;
+  --mob-list-item-icon-size: 4rem;
   --mob-details-title-FZ: 2.2rem;
   --mob-details-desc-FZ: 2rem;
   --mob-details-link-FZ: 1.6rem;
@@ -97,29 +98,31 @@
 
   @media (max-width: 600px) {
     // mobile start
-  --mobile-title-FZ: 2rem;
-  --mobile-icon-size: 2.5rem;
-  --mobile-item-FZ: 1.8rem;
-  --mob-item-title-FZ: 2rem;
-  --mob-details-title-FZ: 2rem;
-  --mob-details-desc-FZ: 1.8rem;
-  --mob-details-link-FZ: 1.5rem;
-  --mob-details-item-FZ: 1.6rem;
-  --mob-meta-company-FZ: 1.6rem;
-  // mobile finish
+    --mobile-title-FZ: 2rem;
+    --mobile-icon-size: 2.5rem;
+    --mobile-item-FZ: 1.8rem;
+    --mob-item-title-FZ: 2rem;
+    --mob-details-title-FZ: 2rem;
+    --mob-list-item-icon-size: 3rem;
+    --mob-details-desc-FZ: 1.8rem;
+    --mob-details-link-FZ: 1.5rem;
+    --mob-details-item-FZ: 1.6rem;
+    --mob-meta-company-FZ: 1.6rem;
+    // mobile finish
   }
 
   @media (max-width: 400px) {
     // mobile start
-  --mobile-title-FZ: 1.6rem;
-  --mobile-icon-size: 2.2rem;
-  --mobile-item-FZ: 1.6rem;
-  --mob-item-title-FZ: 1.8rem;
-  --mob-details-title-FZ: 1.8rem;
-  --mob-details-desc-FZ: 1.6rem;
-  --mob-details-link-FZ: 1.5rem;
-  --mob-details-item-FZ: 1.4rem;
-  --mob-meta-company-FZ: 1.4rem;
-  // mobile finish
+    --mobile-title-FZ: 1.6rem;
+    --mobile-icon-size: 2.2rem;
+    --mobile-item-FZ: 1.6rem;
+    --mob-item-title-FZ: 1.8rem;
+    --mob-details-title-FZ: 1.8rem;
+    --mob-list-item-icon-size: 2rem;
+    --mob-details-desc-FZ: 1.6rem;
+    --mob-details-link-FZ: 1.5rem;
+    --mob-details-item-FZ: 1.4rem;
+    --mob-meta-company-FZ: 1.4rem;
+    // mobile finish
   }
 }

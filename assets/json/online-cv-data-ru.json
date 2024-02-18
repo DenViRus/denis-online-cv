@@ -41,7 +41,7 @@
       },
       {
         "type": "document",
-        "link": "https://drive.google.com/file/d/1Jnz5v8jZVWkbKEPx2n1_bcW0KGI14Uul/view?usp=sharing",
+        "link": "https://drive.google.com/file/d/19-kDUyMQpyypXmsprhBKme8iyVkpkqJ_/view?usp=sharing",
         "text": "Resume PDF",
         "icon": "assets/icon/document.svg"
       }
@@ -132,13 +132,7 @@
         "company": "Транспортная компания. Эксклюзивный подрядчик «Транснефти» по перевозке негабаритных и тяжеловесных грузов.",
         "responsibilities": {
           "title": "обязанности:",
-          "items": [
-            "Управление проектами по перевозке негабаритных грузов",
-            "Выявление потребностей клиентов и планирование ресурсов для клиентских проектов",
-            "Проведение переговоров",
-            "Оформление необходимой нормативной документации",
-            "Контроль исполнения заказов клиентов на всех этапах"
-          ]
+          "items": ["Управление проектами по перевозке негабаритных грузов"]
         },
         "achievements": {
           "title": "достижения:",
@@ -154,21 +148,12 @@
         "responsibilities": {
           "title": "обязанности:",
           "items": [
-            "Формирование базы потенциальных клиентов",
-            "Активные продажи строительного и промышленного оборудования",
-            "Ведение переговоров c клиентами и поставщиками",
-            "Определение потребностей проекта клиента и планирование ресурсов",
-            "Обеспечение бесперебойных поставок оборудования и материалов под задачи клиента"
+            "Активные продажи строительного и промышленного оборудования"
           ]
         },
         "achievements": {
           "title": "достижения:",
-          "items": [
-            "Достигнут среднемесячный объем продаж 10 млн рублей",
-            "Привлек более 50 новых клиентов, в том числе более 10 федерального уровня",
-            "Поддерживал партнерские отношения c новыми клиентами в среднем более двух лет",
-            "Участвовал в крупных федеральных проектах"
-          ]
+          "items": ["Участвовал в крупных федеральных проектах"]
         }
       },
       {
@@ -177,17 +162,12 @@
         "company": "Строительные и отделочные материалы. Производитель отделочных материалов.",
         "responsibilities": {
           "title": "обязанности:",
-          "items": [
-            "Активные продажи",
-            "Проведение переговоров на уровне высшего руководства",
-            "Планирование и разработка новых проектов"
-          ]
+          "items": ["Активные продажи"]
         },
         "achievements": {
           "title": "достижения:",
           "items": [
-            "Достигнут личный ежемесячный объем продаж, превышающий 5 миллионов рублей",
-            "Открыто два новых филиала компании в разных регионах страны."
+            "Открыл два новых филиала компании в разных регионах страны."
           ]
         }
       }
@@ -247,24 +227,99 @@
     "icon": "assets/icon/skills.svg",
     "items": [
       {
-        "type": "layout",
-        "title": "HTML5 & CSS3",
-        "level": 65
+        "type": "html",
+        "name": "HTML",
+        "icon": "assets/icon/skills/html.png"
+      },
+      {
+        "type": "css",
+        "name": "CSS",
+        "icon": "assets/icon/skills/css.png"
       },
       {
         "type": "javascript",
-        "title": "JavaScript",
-        "level": 75
+        "name": "JavaScript",
+        "icon": "assets/icon/skills/javascript.png"
       },
       {
         "type": "typescript",
-        "title": "TypeScript",
-        "level": 35
+        "name": "TypeScript",
+        "icon": "assets/icon/skills/typescript.png"
       },
       {
         "type": "angular",
-        "title": "Angular",
-        "level": 50
+        "name": "Angular",
+        "icon": "assets/icon/skills/angular.png"
+      },
+      {
+        "type": "redux",
+        "name": "Redux",
+        "icon": "assets/icon/skills/redux.png"
+      },
+      {
+        "type": "jest",
+        "name": "Jest",
+        "icon": "assets/icon/skills/jest.png"
+      },
+      {
+        "type": "karma",
+        "name": "Karma",
+        "icon": "assets/icon/skills/karma.png"
+      },
+      {
+        "type": "rxjs",
+        "name": "RxJS",
+        "icon": "assets/icon/skills/rxjs.png"
+      },
+      {
+        "type": "ngrx",
+        "name": "NgRx",
+        "icon": "assets/icon/skills/ngrx.png"
+      },
+      {
+        "type": "material",
+        "name": "Angular Material",
+        "icon": "assets/icon/skills/material.png"
+      },
+      {
+        "type": "nodejs",
+        "name": "NodeJS",
+        "icon": "assets/icon/skills/nodejs.png"
+      },
+      {
+        "type": "webpack",
+        "name": "Webpack",
+        "icon": "assets/icon/skills/webpack.png"
+      },
+      {
+        "type": "git",
+        "name": "Git",
+        "icon": "assets/icon/skills/git.png"
+      },
+      {
+        "type": "github",
+        "name": "GitHub",
+        "icon": "assets/icon/skills/github.png"
+      },
+      {
+        "type": "photoshop",
+        "name": "Photoshop",
+        "icon": "assets/icon/skills/photoshop.png"
+      },
+      {
+        "type": "figma",
+        "name": "Figma",
+        "icon": "assets/icon/skills/figma.png"
+      },
+      {
+        "type": "docker",
+        "name": "Docker",
+        "icon": "assets/icon/skills/docker.png"
+      },
+      {
+        "type": "vscode",
+        "name": "VSCode",
+        "icon": "assets/icon/skills/vscode.png"
       }
     ]
   }

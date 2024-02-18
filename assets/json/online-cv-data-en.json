@@ -41,7 +41,7 @@
       },
       {
         "type": "document",
-        "link": "https://drive.google.com/file/d/1RohxH8YycrwkCcaFpa7pnNHhkhubQDjr/view?usp=sharing",
+        "link": "https://drive.google.com/file/d/1cwfkn-yM6ngN88rMJk1enIZKV2vIOJIa/view?usp=sharing",
         "text": "Resume PDF",
         "icon": "assets/icon/document.svg"
       }
@@ -133,11 +133,7 @@
         "responsibilities": {
           "title": "responsibilities:",
           "items": [
-            "Managing projects for the transportation of oversized cargo",
-            "Identifying customer needs and resource planning for client projects",
-            "Conducting negotiations",
-            "Handling the necessary regulatory documentation",
-            "Monitoring customer order execution at all stages"
+            "Managing projects for the transportation of oversized cargo"
           ]
         },
         "achievements": {
@@ -153,22 +149,11 @@
         "company": "Industrial and Construction Equipment. The largest supplier of construction and industrial equipment in the Volga Region.",
         "responsibilities": {
           "title": "responsibilities:",
-          "items": [
-            "Building a database of potential clients",
-            "Active sales of construction and industrial equipment",
-            "Negotiating with clients and suppliers",
-            "Identifying client project needs and resource planning",
-            "Ensuring uninterrupted equipment and material deliveries for client tasks"
-          ]
+          "items": ["Active sales of construction and industrial equipment"]
         },
         "achievements": {
           "title": "achievements:",
-          "items": [
-            "Achieved an average monthly sales volume of 10 million rubles",
-            "Attracted over 50 new clients, including more than 10 at the federal level",
-            "Maintained new client relationships for an average of over two years",
-            "Participated in major federal projects"
-          ]
+          "items": ["Participated in major federal projects"]
         }
       },
       {
@@ -177,16 +162,11 @@
         "company": "Building and Finishing Materials. Manufacturer of finishing materials.",
         "responsibilities": {
           "title": "responsibilities:",
-          "items": [
-            "Active sales",
-            "Conducting negotiations at the top management level",
-            "Planning and developing new projects"
-          ]
+          "items": ["Active sales"]
         },
         "achievements": {
           "title": "achievements:",
           "items": [
-            "Achieved a personal monthly sales volume exceeding 5 million rubles",
             "Established two new company branches in different regions of the country"
           ]
         }
@@ -242,29 +222,104 @@
     ]
   },
   "skillsData": {
-    "title": "Skills & Proficiency",
+    "title": "Skills & Technologies",
     "type": "skills",
     "icon": "assets/icon/skills.svg",
     "items": [
       {
-        "type": "layout",
-        "title": "HTML5 & CSS3",
-        "level": 65
+        "type": "html",
+        "name": "HTML",
+        "icon": "assets/icon/skills/html.png"
+      },
+      {
+        "type": "css",
+        "name": "CSS",
+        "icon": "assets/icon/skills/css.png"
       },
       {
         "type": "javascript",
-        "title": "JavaScript",
-        "level": 75
+        "name": "JavaScript",
+        "icon": "assets/icon/skills/javascript.png"
       },
       {
         "type": "typescript",
-        "title": "TypeScript",
-        "level": 35
+        "name": "TypeScript",
+        "icon": "assets/icon/skills/typescript.png"
       },
       {
         "type": "angular",
-        "title": "Angular",
-        "level": 50
+        "name": "Angular",
+        "icon": "assets/icon/skills/angular.png"
+      },
+      {
+        "type": "redux",
+        "name": "Redux",
+        "icon": "assets/icon/skills/redux.png"
+      },
+      {
+        "type": "jest",
+        "name": "Jest",
+        "icon": "assets/icon/skills/jest.png"
+      },
+      {
+        "type": "karma",
+        "name": "Karma",
+        "icon": "assets/icon/skills/karma.png"
+      },
+      {
+        "type": "rxjs",
+        "name": "RxJS",
+        "icon": "assets/icon/skills/rxjs.png"
+      },
+      {
+        "type": "ngrx",
+        "name": "NgRx",
+        "icon": "assets/icon/skills/ngrx.png"
+      },
+      {
+        "type": "material",
+        "name": "Angular Material",
+        "icon": "assets/icon/skills/material.png"
+      },
+      {
+        "type": "nodejs",
+        "name": "NodeJS",
+        "icon": "assets/icon/skills/nodejs.png"
+      },
+      {
+        "type": "webpack",
+        "name": "Webpack",
+        "icon": "assets/icon/skills/webpack.png"
+      },
+      {
+        "type": "git",
+        "name": "Git",
+        "icon": "assets/icon/skills/git.png"
+      },
+      {
+        "type": "github",
+        "name": "GitHub",
+        "icon": "assets/icon/skills/github.png"
+      },
+      {
+        "type": "photoshop",
+        "name": "Photoshop",
+        "icon": "assets/icon/skills/photoshop.png"
+      },
+      {
+        "type": "figma",
+        "name": "Figma",
+        "icon": "assets/icon/skills/figma.png"
+      },
+      {
+        "type": "docker",
+        "name": "Docker",
+        "icon": "assets/icon/skills/docker.png"
+      },
+      {
+        "type": "vscode",
+        "name": "VSCode",
+        "icon": "assets/icon/skills/vscode.png"
       }
     ]
   }
