@@ -28,7 +28,7 @@ export class LangTogglerComponent implements OnInit, OnDestroy {
   }
 
   onToggleLang() {
-    this.langTogglerData = this.langTogglerData === LangToggler.EN ? LangToggler.RU : LangToggler.EN;
+    this.langTogglerData = this.langTogglerData === LangToggler.RU ? LangToggler.EN : LangToggler.RU;
     this.store.dispatch(OnlineCvActions.loadLangTogglerData({ langTogglerData: this.langTogglerData }));
 
   }

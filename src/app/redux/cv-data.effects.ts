@@ -17,9 +17,9 @@ export class CvDataEffects {
       ofType(OnlineCvActions.loadLangTogglerData),
       switchMap((action) => {
         const url =
-          action.langTogglerData === 'en'
-            ? 'assets/json/online-cv-data-en.json'
-            : 'assets/json/online-cv-data-ru.json';
+          action.langTogglerData === 'ru'
+            ? 'assets/json/online-cv-data-ru.json'
+            : 'assets/json/online-cv-data-en.json';
         return this.onlineCvService.getProductsData(url).pipe(
           map((onlineCvData) => {
             return OnlineCvActions.loadOnlineCvData({
