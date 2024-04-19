@@ -44,6 +44,12 @@
         "link": "https://drive.google.com/file/d/18pew2-8zCx8irvARnp8LWa7xKFbTTbZx/view?usp=drive_link",
         "text": "Resume PDF",
         "icon": "assets/icon/document.svg"
+      },
+      {
+        "type": "document",
+        "link": "https://flowcv.com/resume/nu91gp3fwm",
+        "text": "My CV PDF",
+        "icon": "assets/icon/document.svg"
       }
     ]
   },

@@ -22,7 +22,7 @@ export interface OnlineCvState {
 }
 
 export const initialState: OnlineCvState = {
-  langTogglerData: LangToggler.EN,
+  langTogglerData: LangToggler.RU,
   onlineCvData: {
     profileData: {} as IProfile,
     contactsData: {} as IContacts,
